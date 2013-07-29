@@ -1,0 +1,59 @@
+10
+
+dir
+4
+http://localhost/svn/maklerpoint/office/platform/ext/iReport/ireport/samples
+http://localhost/svn/maklerpoint
+
+
+
+2011-11-13T12:48:11.428896Z
+2
+yves
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9884dcec-6777-4a34-a7c3-25d457b4cd5b
+
+
+
+
+
+
+0
+
+Basic_report
+dir
+
+Charts
+dir
+
+Crosstabs
+dir
+
+Elements
+dir
+
+Fonts
+dir
+
+Groups
+dir
+
+Parameters_and_Variables
+dir
+
+Subreports
+dir
+

@@ -1,0 +1,47 @@
+/*
+ *  Program:    MaklerPoint System
+ *  Module:     Main
+ *  Language:   Java / Swing
+ *  Date:       2010/09/03 13:10
+ *  Web:        http://www.maklerpoint.de
+ *  Version:    0.6.1
+ *
+ *  Copyright (C) 2010 Yves Hoppe.  All Rights Reserved.
+ *  See License.txt or http://www.maklerpoint.de/copyright for details.
+ *
+ *  This software is distributed WITHOUT ANY WARRANTY; without even the
+ *  implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See
+ *  above copyright notices for details.
+ */
+
+package de.acyrance.CRM.Backup;
+
+/**
+ *
+ * @author Yves Hoppe <info at yves-hoppe.de>
+ */
+public class BackupFiletypes {
+
+    public static final int ZIP = 0;
+    public static final int TAR = 1;
+    public static final int TARGZ = 2;
+    public static final int SQL = 3;
+
+    public static String getFileEnding(int type) {
+        switch (type)
+        {
+            default:
+            case 0:
+                return ".zip";                
+
+            case 1:
+                return ".tar";
+
+            case 2:
+                return ".tar.gz";
+
+            case 3:
+                return ".sql";
+        }
+    }
+}

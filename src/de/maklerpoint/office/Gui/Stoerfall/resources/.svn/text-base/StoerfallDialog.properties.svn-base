@@ -1,0 +1,33 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+btnSave.text=Speichern
+btnMaxComments3.toolTipText=Text bearbeiten (Zoom)
+jScrollPane4.viewportBorder.title=Notizen
+jLabel12.text=Benutzerdefiniert 1:
+jLabel13.text=Benutzerdefiniert 2:
+jLabel14.text=Benutzerdefiniert 3:
+btnMaxCustom1.toolTipText=Text bearbeiten (Zoom)
+btnMaxCustom2.toolTipText=Text bearbeiten (Zoom)
+btnMaxCustom3.toolTipText=Text bearbeiten (Zoom)
+panel_sonstiges.TabConstraints.tabTitle=Sonstiges
+jLabel17.text=R\u00fcckstand:
+jLabel3.text=Bearbeiter:
+jLabel19.text=Interne St\u00f6rfall-Nr.
+jLabel2.text=Kunde:
+jLabel1.text=Vertrag:
+panel_basis.TabConstraints.tabTitle=Basis Daten
+btnCancel.text=Abbruch
+Form.title=Neuer St\u00f6rfall
+jLabel27.text=Eingang:
+jLabel28.text=F\u00e4lligkeit:
+jLabel21.text=Frist:
+jLabel5.text=Kategorie:
+jLabel4.text=Mahnstatus:
+#NOI18N
+btnMaxCustom1.icon=/de/acyrance/CRM/Gui/resources/lupe.gif
+jLabel6.text=Grund:
+date_eingang.dateFormatString=dd.MM.yyyy HH:mm
+date_faelligkeit.dateFormatString=dd.MM.yyyy
+check_aufgabeanlegen.text=Aufgabe anlegen
+date_aufgabe.dateFormatString=dd.MM.yyyy

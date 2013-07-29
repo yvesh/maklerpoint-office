@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs
+END
+TabPanelBetreuungPrivat.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelBetreuungPrivat.java
+END
+TabPanelKinder.form
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelKinder.form
+END
+TabPanelBeratungsdokumentation.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelBeratungsdokumentation.java
+END
+TabPanelVorFolgeVertraege.form
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelVorFolgeVertraege.form
+END
+TabPanelCourtagen.form
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelCourtagen.form
+END
+TabPanelStoerfaelle.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelStoerfaelle.java
+END
+TabPanelTermine.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelTermine.java
+END
+TabPanelDokumente.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelDokumente.java
+END
+TabPanelHinterlegteKontakte.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelHinterlegteKontakte.java
+END
+TabPanelSchaeden.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelSchaeden.java
+END
+TabPanelBankkonten.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelBankkonten.java
+END
+TabPanelForderungen.form
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelForderungen.form
+END
+TabPanelZusatzadressen.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelZusatzadressen.java
+END
+TabPanelNotizen.form
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelNotizen.form
+END
+TabPanelZahlungen.form
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelZahlungen.form
+END
+TabPanelKunden.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelKunden.java
+END
+TabPanelVerlauf.form
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelVerlauf.form
+END
+TabPanelAnsprechpartner.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelAnsprechpartner.java
+END
+TabPanelRisiken.form
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelRisiken.form
+END
+TabPanelBetreuungFirmen.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelBetreuungFirmen.java
+END
+TabPanelVertraege.form
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelVertraege.form
+END
+TabPanelKinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelKinder.java
+END
+TabPanelBenutzerKarriere.form
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelBenutzerKarriere.form
+END
+TabPanelBetreuungPrivat.form
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelBetreuungPrivat.form
+END
+TabPanelVorFolgeVertraege.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelVorFolgeVertraege.java
+END
+TabPanelCourtagen.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelCourtagen.java
+END
+TabPanelBeratungsdokumentation.form
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelBeratungsdokumentation.form
+END
+iTabs.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/iTabs.java
+END
+TabPanelStoerfaelle.form
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelStoerfaelle.form
+END
+TabPanelTermine.form
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelTermine.form
+END
+TabPanelDokumente.form
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelDokumente.form
+END
+TabPanelForderungen.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelForderungen.java
+END
+TabPanelHinterlegteKontakte.form
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelHinterlegteKontakte.form
+END
+TabPanelNotizen.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelNotizen.java
+END
+TabPanelSchaeden.form
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelSchaeden.form
+END
+TabPanelZahlungen.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelZahlungen.java
+END
+TabPanelBankkonten.form
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelBankkonten.form
+END
+TabPanelZusatzadressen.form
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelZusatzadressen.form
+END
+TabPanelVerlauf.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelVerlauf.java
+END
+TabPanelRisiken.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelRisiken.java
+END
+TabPanelKunden.form
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelKunden.form
+END
+TabPanelAnsprechpartner.form
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelAnsprechpartner.form
+END
+TabPanelVertraege.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelVertraege.java
+END
+TabPanelBetreuungFirmen.form
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelBetreuungFirmen.form
+END
+TabPanelBenutzerKarriere.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Tabs/TabPanelBenutzerKarriere.java
+END

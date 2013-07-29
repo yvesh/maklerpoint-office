@@ -1,0 +1,10 @@
+jLabel2.text=Geburtstage anzeigen von:      
+jLabel3.text=\ \ \ \ bis    
+btnReport.text=Liste drucken
+btnReport1.text=Brief(e) erstellen
+btnReport1.toolTipText=Den ausgew\u00e4hlten Kunde(n) einen Gratulationsbrief schreiben
+btnReport2.toolTipText=Den ausgew\u00e4hlten Kunde(n) einen Gratulatiosemail senden
+btnReport2.text=E-Mails versenden
+btnRefresh.toolTipText=Tabelle aktualisieren
+#NOI18N
+btnRefresh.icon=/de/acyrance/CRM/Gui/resources/icon_clean/table-refresh.png

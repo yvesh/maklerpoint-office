@@ -1,0 +1,40 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+jLabel5.text=Server Typ:
+btnTest.text=Datenbank Einstellungen testen
+jLabel4.text=Password:
+jLabel3.text=Datenbank Benutzer:
+jLabel6.text=Datenbank Name:
+field_databasename.text=maklerpointdb
+jLabel2.text=Server Port:
+jLabel1.text=Server Adresse:
+field_serveraddress.text=localhost
+jToolTipLabel1.toolTipText=W\u00e4hlen Sie hier den von Ihnen verwendeten Datenbanktyp.
+jLabel7.text=<html><body>Bitte geben Sie die Datenbankinformationen der bestehenden<br /> MaklerPoint Installation an.</body><html>
+jToolTipLabel2.toolTipText=Geben Sie hier den Benutzernamen f\u00fcr die Datenbank an.
+jToolTipLabel3.toolTipText=Geben Sie hier bitte die Adresse (IP oder Hostname) der Datenbank an.
+jToolTipLabel4.toolTipText=W\u00e4hlen Sie hier den Serverport der MaklerPoint Datenbank. Wenn Sie dieses Feld freilassen werden die Standard Einstellungen f\u00fcr den jeweiligen Datenbanktyp verwendet.
+jToolTipLabel5.toolTipText=Geben Sie hier den Namen der Datenbank an. Normalerweise lautet dieser maklerpointdb.
+#NOI18N
+jToolTipLabel1.icon=/de/acyrance/CRM/Gui/resources/information.png
+#NOI18N
+jToolTipLabel3.icon=/de/acyrance/CRM/Gui/resources/information.png
+#NOI18N
+jToolTipLabel4.icon=/de/acyrance/CRM/Gui/resources/information.png
+#NOI18N
+jToolTipLabel5.icon=/de/acyrance/CRM/Gui/resources/information.png
+#NOI18N
+jToolTipLabel2.icon=/de/acyrance/CRM/Gui/resources/information.png
+jLabel9.text=Wurzelverzeichnis f\u00fcr Daten:
+jLabel8.text=Dateisystem Einstellungen:
+#NOI18N
+jLabel8.font=Bitstream Vera Sans 12 Bold
+#NOI18N
+btnTest.icon=/de/acyrance/CRM/Gui/resources/icon_clean/database-network.png
+btnFileopen.toolTipText=Text bearbeiten (Zoom)
+jToolTipLabel6.toolTipText=W\u00e4hlen Sie hier den Ort f\u00fcr die MaklerPoint Office Daten. Dieser sollte im Netzwerk f\u00fcr alle Computer die MaklerPoint verwenden erreichbar seien.
+#NOI18N
+jToolTipLabel6.icon=/de/acyrance/CRM/Gui/resources/information.png
+#NOI18N
+btnFileopen.icon=/de/acyrance/CRM/Gui/resources/icon_clean/computer.png

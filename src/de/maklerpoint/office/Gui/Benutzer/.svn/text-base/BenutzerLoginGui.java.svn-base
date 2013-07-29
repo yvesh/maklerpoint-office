@@ -1,0 +1,429 @@
+/*
+ *  Program:    MaklerPoint System
+ *  Module:     Main
+ *  Language:   Java / Swing
+ *  Date:       2010/09/03 13:10
+ *  Web:        http://www.maklerpoint.de
+ *  Version:    0.6.1
+ *
+ *  Copyright (C) 2010 Yves Hoppe.  All Rights Reserved.
+ *  See License.txt or http://www.maklerpoint.de/copyright for details.
+ *
+ *  This software is distributed WITHOUT ANY WARRANTY; without even the
+ *  implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See
+ *  above copyright notices for details.
+ */
+
+/*
+ * BenutzerLoginGui.java
+ *
+ * Created on Jul 6, 2010, 10:26:05 AM
+ */
+package de.acyrance.CRM.Gui.Benutzer;
+
+import de.acyrance.CRM.Benutzer.BenutzerObj;
+import de.acyrance.CRM.Benutzer.Tools.BenutzerSQLMethods;
+import de.acyrance.CRM.CRM;
+import de.acyrance.CRM.Database.DatabaseConnection;
+import de.acyrance.CRM.Exception.ShowException;
+import de.acyrance.CRM.Gui.CRMAboutBox;
+import de.acyrance.CRM.Gui.Exception.ExceptionDialogGui;
+import de.acyrance.CRM.Gui.Splashscreen.FakeSplashScreenDeprecated;
+import de.acyrance.CRM.Gui.Tools.AWTUtilitiesWrapper;
+import de.acyrance.CRM.Konstanten.MPointKonstanten;
+import de.acyrance.CRM.Logging.Log;
+import de.acyrance.CRM.System.Configuration.Config;
+import de.acyrance.CRM.System.Configuration.DatabaseConfig;
+import de.acyrance.CRM.System.Environment;
+import de.acyrance.CRM.System.Version;
+import de.acyrance.licensor.Gui.LicenseInformationDialog;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Shape;
+import java.awt.geom.RoundRectangle2D;
+import java.io.IOException;
+import java.sql.SQLException;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import org.openide.util.Exceptions;
+
+/**
+ *
+ * @author Yves Hoppe <info at yves-hoppe.de>
+ */
+public class BenutzerLoginGui extends javax.swing.JDialog {
+
+    private String[] args;
+    private int falscheVersuche = 0;
+    public FakeSplashScreenDeprecated sp = null;
+    private boolean isShapingSupported = true;
+
+    public BenutzerLoginGui(java.awt.Frame parent, boolean modal, String[] args) {
+        super(parent, modal);
+        this.args = args;
+        initComponents();
+
+        this.setSize(500, 330);
+        isShapingSupported = AWTUtilitiesWrapper.isTranslucencySupported(AWTUtilitiesWrapper.PERPIXEL_TRANSPARENT);
+        if (isShapingSupported) {
+            Shape shape = null;
+            loadBackground();
+            shape = new RoundRectangle2D.Float(0, 0, this.getWidth(), this.getHeight(), 51, 51);
+            AWTUtilitiesWrapper.setWindowShape(this, shape);
+        } else {
+            Log.logger.warn("Abgrundete Ecken werden vom Betriebssystem nicht unterstützt. "
+                    + Environment.OS_NAME + " " + Environment.OS_VERSION + " (VM: " + Environment.VM_VENDOR + ")");
+            System.out.println("Abgerundete Ecken werden vom Betriebssystem nicht unterstützt");
+        }
+        this.setIconImage(MPointKonstanten.icon);
+
+        if (Config.get("usernameLogin", null) != null) {
+            this.fieldUser.setText(Config.get("usernameLogin", null));
+            this.check_username.setSelected(true);
+        }
+    }
+
+    private void loadBackground() {
+        try {
+            Image backgroundImage = javax.imageio.ImageIO.read(CRM.class.getClassLoader().getResource(
+                    "de/acyrance/CRM/Gui/Benutzer/resources/bg_login.png"));
+
+//            this.getRootPane().getGraphics().drawImage(backgroundImage, 500, 330, this);
+//
+//            this.getContentPane().getGraphics().drawImage(backgroundImage, 500, 330, this);
+//
+//            Graphics g = this.getGraphics();
+//            g.drawImage(backgroundImage, 500, 330, this);
+//
+//            this.paintComponents(g);
+//
+//            JPanel pan = new JPanel() {
+//
+//                @Override
+//                public void paintComponent(Graphics g) {
+//                    try {
+//                        Image backgroundImage = javax.imageio.ImageIO.read(CRM.class.getClassLoader().getResource(
+//                                "de/acyrance/CRM/Gui/Benutzer/resources/bg_login.png"));
+//
+//                        g.drawImage(backgroundImage, 500, 330, this);
+//                    } catch (IOException ex) {
+//                        Exceptions.printStackTrace(ex);
+//                    }
+//                }
+//            };
+
+        } catch (IOException ex) {
+            Exceptions.printStackTrace(ex);
+        }
+    }
+
+    public synchronized void waitFor(int val) {
+        try {
+//            System.out.println("Wating for: " + val);
+            this.wait(1000);
+        } catch (InterruptedException ex) {
+            Log.logger.warn("Der Thread nicht für 1000 ms pausiert werden", ex);
+        }
+    }
+
+    /** This method is called from within the constructor to
+     * initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is
+     * always regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        panel_bg = new JPanel() {
+            @Override
+            public void paintComponent(Graphics g) {
+                try {
+                    Image backgroundImage = javax.imageio.ImageIO.read(CRM.class.getClassLoader().getResource(
+                        "de/acyrance/CRM/Gui/Benutzer/resources/bg_login.png"));
+
+                g.drawImage(backgroundImage, 0, 0, this);
+            } catch (IOException ex) {
+                Exceptions.printStackTrace(ex);
+            }
+        }
+    };
+    btnOk = new javax.swing.JButton();
+    jLabel1 = new javax.swing.JLabel();
+    jLabel2 = new javax.swing.JLabel();
+    fieldUser = new javax.swing.JTextField();
+    fieldPassword = new javax.swing.JPasswordField();
+    label_errorlogin = new javax.swing.JLabel();
+    check_username = new javax.swing.JCheckBox();
+    btnLicense = new javax.swing.JButton();
+    btnHelp = new javax.swing.JButton();
+    btnInfo = new javax.swing.JButton();
+    btnClose = new javax.swing.JButton();
+
+    setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+    org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(de.acyrance.CRM.CRM.class).getContext().getResourceMap(BenutzerLoginGui.class);
+    setTitle(resourceMap.getString("Form.title")); // NOI18N
+    setMinimumSize(new java.awt.Dimension(500, 330));
+    setName("Form"); // NOI18N
+    setResizable(false);
+    setUndecorated(true);
+
+    panel_bg.setMaximumSize(new java.awt.Dimension(500, 330));
+    panel_bg.setMinimumSize(new java.awt.Dimension(500, 330));
+    panel_bg.setName("panel_bg"); // NOI18N
+
+    btnOk.setText(resourceMap.getString("btnOk.text")); // NOI18N
+    btnOk.setName("btnOk"); // NOI18N
+    btnOk.setPreferredSize(new java.awt.Dimension(100, 27));
+    btnOk.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnOkActionPerformed(evt);
+        }
+    });
+
+    jLabel1.setText(resourceMap.getString("jLabel1.text")); // NOI18N
+    jLabel1.setName("jLabel1"); // NOI18N
+
+    jLabel2.setText(resourceMap.getString("jLabel2.text")); // NOI18N
+    jLabel2.setName("jLabel2"); // NOI18N
+
+    fieldUser.setText(resourceMap.getString("fieldUser.text")); // NOI18N
+    fieldUser.setName("fieldUser"); // NOI18N
+    fieldUser.setPreferredSize(new java.awt.Dimension(150, 25));
+
+    fieldPassword.setText(resourceMap.getString("fieldPassword.text")); // NOI18N
+    fieldPassword.setName("fieldPassword"); // NOI18N
+    fieldPassword.setPreferredSize(new java.awt.Dimension(150, 25));
+    fieldPassword.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnOkActionPerformed(evt);
+        }
+    });
+
+    label_errorlogin.setForeground(resourceMap.getColor("label_errorlogin.foreground")); // NOI18N
+    label_errorlogin.setText(resourceMap.getString("label_errorlogin.text")); // NOI18N
+    label_errorlogin.setName("label_errorlogin"); // NOI18N
+
+    check_username.setText(resourceMap.getString("check_username.text")); // NOI18N
+    check_username.setName("check_username"); // NOI18N
+
+    btnLicense.setIcon(resourceMap.getIcon("btnLicense.icon")); // NOI18N
+    btnLicense.setText(resourceMap.getString("btnLicense.text")); // NOI18N
+    btnLicense.setToolTipText(resourceMap.getString("btnLicense.toolTipText")); // NOI18N
+    btnLicense.setBorder(null);
+    btnLicense.setBorderPainted(false);
+    btnLicense.setName("btnLicense"); // NOI18N
+    btnLicense.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnLicenseActionPerformed(evt);
+        }
+    });
+
+    btnHelp.setIcon(resourceMap.getIcon("btnHelp.icon")); // NOI18N
+    btnHelp.setToolTipText(resourceMap.getString("btnHelp.toolTipText")); // NOI18N
+    btnHelp.setBorder(null);
+    btnHelp.setBorderPainted(false);
+    btnHelp.setName("btnHelp"); // NOI18N
+
+    btnInfo.setIcon(resourceMap.getIcon("btnInfo.icon")); // NOI18N
+    btnInfo.setToolTipText(resourceMap.getString("btnInfo.toolTipText")); // NOI18N
+    btnInfo.setBorder(null);
+    btnInfo.setBorderPainted(false);
+    btnInfo.setName("btnInfo"); // NOI18N
+    btnInfo.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnInfoActionPerformed(evt);
+        }
+    });
+
+    btnClose.setIcon(resourceMap.getIcon("btnClose.icon")); // NOI18N
+    btnClose.setToolTipText(resourceMap.getString("btnClose.toolTipText")); // NOI18N
+    btnClose.setBorder(null);
+    btnClose.setBorderPainted(false);
+    btnClose.setName("btnClose"); // NOI18N
+    btnClose.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnCloseActionPerformed(evt);
+        }
+    });
+
+    javax.swing.GroupLayout panel_bgLayout = new javax.swing.GroupLayout(panel_bg);
+    panel_bg.setLayout(panel_bgLayout);
+    panel_bgLayout.setHorizontalGroup(
+        panel_bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        .addGroup(panel_bgLayout.createSequentialGroup()
+            .addContainerGap(243, Short.MAX_VALUE)
+            .addGroup(panel_bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addComponent(label_errorlogin)
+                .addGroup(panel_bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panel_bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(fieldUser, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(fieldPassword, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(panel_bgLayout.createSequentialGroup()
+                            .addComponent(btnLicense)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btnInfo)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btnHelp)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btnClose))))
+                .addComponent(check_username)
+                .addComponent(btnOk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(30, 30, 30))
+    );
+    panel_bgLayout.setVerticalGroup(
+        panel_bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        .addGroup(panel_bgLayout.createSequentialGroup()
+            .addGap(20, 20, 20)
+            .addGroup(panel_bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addComponent(btnClose)
+                .addComponent(btnInfo)
+                .addComponent(btnLicense)
+                .addComponent(btnHelp))
+            .addGap(55, 55, 55)
+            .addComponent(jLabel1)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(fieldUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGap(12, 12, 12)
+            .addComponent(jLabel2)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(fieldPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+            .addComponent(check_username)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(btnOk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(label_errorlogin)
+            .addContainerGap(57, Short.MAX_VALUE))
+    );
+
+    label_errorlogin.setVisible(false);
+
+    javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+    getContentPane().setLayout(layout);
+    layout.setHorizontalGroup(
+        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        .addComponent(panel_bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+    );
+    layout.setVerticalGroup(
+        layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        .addComponent(panel_bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+    );
+
+    pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void btnOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOkActionPerformed
+        String username = fieldUser.getText();
+        String password = String.valueOf(fieldPassword.getPassword());
+
+        try {
+            BenutzerObj benutzer = BenutzerSQLMethods.loadBenutzer(DatabaseConnection.open(), username, password);
+            if (benutzer == null) {
+                falscheVersuche++;
+                Log.logger.info("Nicht erfolgreicher Loginversuch mit folgendem Benutzernamen / Kennung: " + username);
+                label_errorlogin.setVisible(true);
+                this.setSize(this.getWidth(), this.getHeight() + 20);
+                if (falscheVersuche == 3) {
+                    label_errorlogin.setText("Aus Sicherheitsgründen wurde die Anmeldung gespeert");
+                    Log.logger.warn("Drei Fehlversuche bei der Anmeldung mit folgender Kennung: " + username);
+                    btnOk.setEnabled(false);
+                }
+            } else {
+                if (this.check_username.isEnabled()) {
+                    Config.set("usernameLogin", username);
+                }
+
+//                this.setVisible(false);
+
+                JFrame mainFrame = CRM.getApplication().getMainFrame();
+                sp = new FakeSplashScreenDeprecated(mainFrame, benutzer);
+                sp.setLocationRelativeTo(mainFrame);
+                CRM.getApplication().show(sp);
+
+                try {
+                    this.dispose();
+                } catch (Exception e) {
+                    System.out.println("This triggers it");
+                    e.printStackTrace();
+                }
+////              sp.setVisible(true)
+//                CRM.getApplication().show(sp);
+//
+//                this.waitFor(200);
+//                sp.closeIt();
+            }
+        } catch (SQLException e) {
+            Log.databaselogger.fatal("Datenbankfehler: Die Benutzeranmeldung für \"" + username + "\" "
+                    + "konnte nicht durgeführt werden ", e);
+            ShowException.showException("Es trat ein unbekannter Datenbankfehler bei der Benutzeranmeldung auf. Unter Details "
+                    + "erhalten Sie weitere Informationen. MaklerPoint Office wird jetzt beendet.",
+                    ExceptionDialogGui.LEVEL_FATAL, e, "Schwerwiegend: Datenbank Fehler");
+            System.exit(301);
+        }
+//        catch (NoSuchAlgorithmException e) {
+//            ShowException.showException("Ihr System verfügt nicht über das Standardverschlüsselungsverfahren MD5. "
+//                    + "Bitte kontaktieren Sie den Support. ",
+//                    ExceptionDialogGui.LEVEL_FATAL, e.getLocalizedMessage(), "Schwerwiegend: MD5 Algorithmus Fehler");
+//              Log.databaselogger.fatal("MD5 Verschlüsselung wurde nicht gefunden. Fehler bei der Benutzeranmeldung", e);
+//        }
+    }//GEN-LAST:event_btnOkActionPerformed
+
+    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
+        System.exit(11);
+    }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void btnLicenseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLicenseActionPerformed
+        if (licenseDialog == null) {
+            licenseDialog = new LicenseInformationDialog(null, false, Version.version,
+                    Version.build, DatabaseConfig.getDatabaseName());
+        }
+
+        CRM.getApplication().show(licenseDialog);
+    }//GEN-LAST:event_btnLicenseActionPerformed
+
+    private void btnInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInfoActionPerformed
+        if (aboutBox == null) {
+            aboutBox = new CRMAboutBox(null);
+        }
+        CRM.getApplication().show(aboutBox);
+    }//GEN-LAST:event_btnInfoActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+
+            public void run() {
+                BenutzerLoginGui dialog = new BenutzerLoginGui(new javax.swing.JFrame(), true, null);
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+
+                    public void windowClosing(java.awt.event.WindowEvent e) {
+                        System.exit(0);
+                    }
+                });
+                dialog.setVisible(true);
+            }
+        });
+    }
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnClose;
+    public javax.swing.JButton btnHelp;
+    public javax.swing.JButton btnInfo;
+    public javax.swing.JButton btnLicense;
+    public javax.swing.JButton btnOk;
+    public javax.swing.JCheckBox check_username;
+    public javax.swing.JPasswordField fieldPassword;
+    public javax.swing.JTextField fieldUser;
+    public javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel label_errorlogin;
+    public javax.swing.JPanel panel_bg;
+    // End of variables declaration//GEN-END:variables
+    private JDialog aboutBox;
+    private JDialog licenseDialog;
+}

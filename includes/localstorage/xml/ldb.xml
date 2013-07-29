@@ -1,0 +1,876 @@
+<?xml version="1.0"?>
+<!DOCTYPE database SYSTEM "http://db.apache.org/torque/dtd/database">
+  <database name="acyrancecrm">
+    <table name="aufgaben">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="besitzerId" primaryKey="false" required="true" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="pub" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="beschreibung" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="tag" primaryKey="false" required="true" type="VARCHAR" size="255" default="Standard" autoIncrement="false"/>
+      <column name="kundeKennung" primaryKey="false" required="true" type="VARCHAR" size="500" default="-1" autoIncrement="false"/>
+      <column name="start" primaryKey="false" required="true" type="VARCHAR" size="255" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="ende" primaryKey="false" required="true" type="VARCHAR" size="255" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="INTEGER" size="10" default="0" autoIncrement="false"/>
+    </table>
+    <table name="backup">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="path" primaryKey="false" required="true" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="type" primaryKey="false" required="true" type="TINYINT" size="3" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="automatic" primaryKey="false" required="true" type="BIT" default="1" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="success" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="fileAvailable" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="backupSize" primaryKey="false" required="true" type="BIGINT" size="19" default="-1" autoIncrement="false"/>
+      <column name="filetype" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="bankkonten">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="type" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="kundenKennung" primaryKey="false" required="true" type="VARCHAR" size="255" default="-1" autoIncrement="false"/>
+      <column name="versichererId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="kontonummer" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bankleitzahl" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bankinstitut" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="kontoinhaber" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="iban" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bic" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="false" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="benutzer">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="parentId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="firmenId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="level" primaryKey="false" required="true" type="INTEGER" size="10" default="0" autoIncrement="false"/>
+      <column name="authority" primaryKey="false" required="true" type="VARCHAR" size="500" default="ROLE_USER" autoIncrement="false"/>
+      <column name="unterVermittler" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="kennung" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="anrede" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="vorname" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="vorname2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="weitereVornamen" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="nachname" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="firma" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="strasse" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="strasse2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="plz" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="ort" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="addresseZusatz" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="addresseZusatz2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="land" primaryKey="false" required="false" type="VARCHAR" size="500" default="Deutschland" autoIncrement="false"/>
+      <column name="geburtsdatum" primaryKey="false" required="false" type="VARCHAR" size="50" autoIncrement="false"/>
+      <column name="telefon" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="telefon2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="fax" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="fax2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="mobil" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="mobil2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="email" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="email2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="homepage" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="homepage2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="username" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="password" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="custom1" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="custom2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="custom3" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="custom4" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="custom5" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="lastlogin" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="logincount" primaryKey="false" required="true" type="INTEGER" size="10" default="1" autoIncrement="false"/>
+      <column name="webenabled" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="beratungsprotokolle">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="kundenKennung" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="versicherungsId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="produktId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="vertragId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="beratungsVerzicht" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="dokumentationsVerzicht" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="wiederVorlage" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="kundenWuensche" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="kundenBedarf" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="rat" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="entscheidung" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="marktuntersuchung" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="kundenBemerkungen" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="versicherungsSparte" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="versicherungsGesellschaft" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="beratungsVerzichtArt" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="kundenAnschreiben" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="dokumente" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="checkKundenAnschreiben" primaryKey="false" required="true" type="BIT" default="1" autoIncrement="false"/>
+      <column name="checkBeratungsDokumentation" primaryKey="false" required="true" type="BIT" default="1" autoIncrement="false"/>
+      <column name="checkBeratungsDokuVerzicht" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="checkInformationsPflichten" primaryKey="false" required="true" type="BIT" default="1" autoIncrement="false"/>
+      <column name="checkDruckstuecke" primaryKey="false" required="true" type="BIT" default="1" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="briefe">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="type" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <column name="categoryId" primaryKey="false" required="false" type="INTEGER" size="10" default="1" autoIncrement="false"/>
+      <column name="creatorId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="loeschbar" primaryKey="false" required="false" type="BIT" default="1" autoIncrement="false"/>
+      <column name="privatKunde" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="geschKunde" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="versicherer" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="produkt" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="benutzer" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="stoerfall" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="vertrag" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="filename" primaryKey="false" required="true" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="fullpath" primaryKey="false" required="true" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="checksum" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="name" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="beschreibung" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="tag" primaryKey="false" required="false" type="VARCHAR" size="500" default="Standard" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="false" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="briefe_cat">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="name" primaryKey="false" required="true" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="dokumente">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="creatorId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="kundenKennung" primaryKey="false" required="true" type="VARCHAR" size="255" default="-1" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="versichererId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="produktId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="bpId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="stoerId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="vertragId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="filetype" primaryKey="false" required="true" type="TINYINT" size="3" default="-1" autoIncrement="false"/>
+      <column name="name" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="fullPath" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="label" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="beschreibung" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="checksum" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="tag" primaryKey="false" required="false" type="VARCHAR" size="255" default="Standard" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="lastviewed" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="viewcount" primaryKey="false" required="true" type="INTEGER" size="10" default="1" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="emails">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="creatorId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="kundenKennung" primaryKey="false" required="false" type="VARCHAR" size="255" default="-1" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="versichererId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="produktId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="bpId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="schadenId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="stoerId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="vertragId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="filetype" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="empfaenger" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="absender" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="cc" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="betreff" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="body" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="nohtml" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="send" primaryKey="false" required="false" type="BIT" default="1" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="false" type="TINYINT" size="3" autoIncrement="false"/>
+    </table>
+    <table name="firmen_ansprechpartner">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="kundenKennung" primaryKey="false" required="false" type="VARCHAR" size="50" autoIncrement="false"/>
+      <column name="versichererId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="creatorId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="ordering" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="anrede" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="title" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="vorname" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="nachname" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="geburtdatum" primaryKey="false" required="false" type="DATE" size="10" autoIncrement="false"/>
+      <column name="abteilung" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="funktion" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="prioritaet" primaryKey="false" required="true" type="INTEGER" size="10" default="0" autoIncrement="false"/>
+      <column name="communication1" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication3" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication4" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication5" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication1Type" primaryKey="false" required="true" type="INTEGER" size="10" default="0" autoIncrement="false"/>
+      <column name="communication2Type" primaryKey="false" required="true" type="INTEGER" size="10" default="1" autoIncrement="false"/>
+      <column name="communication3Type" primaryKey="false" required="true" type="INTEGER" size="10" default="4" autoIncrement="false"/>
+      <column name="communication4Type" primaryKey="false" required="true" type="INTEGER" size="10" default="7" autoIncrement="false"/>
+      <column name="communication5Type" primaryKey="false" required="true" type="INTEGER" size="10" default="10" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="firmenkunden">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="mandantenId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="creator" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="parentFirma" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="betreuer" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="type" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="kundenNr" primaryKey="false" required="true" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenName" primaryKey="false" required="true" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenNameZusatz" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenNameZusatz2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenStrasse" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenPLZ" primaryKey="false" required="false" type="VARCHAR" size="30" autoIncrement="false"/>
+      <column name="firmenStadt" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenBundesland" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenLand" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenTyp" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenSize" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenSitz" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenPostfach" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="firmenPostfachName" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenPostfachPlz" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenPostfachOrt" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenRechtsform" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenEinkommen" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenBranche" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenGruendungDatum" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenGeschaeftsfuehrer" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenProKura" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="firmenStandorte" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="communication1" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication3" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication4" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication5" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication6" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication1Type" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <column name="communication2Type" primaryKey="false" required="true" type="TINYINT" size="3" default="1" autoIncrement="false"/>
+      <column name="communication3Type" primaryKey="false" required="true" type="TINYINT" size="3" default="4" autoIncrement="false"/>
+      <column name="communication4Type" primaryKey="false" required="true" type="TINYINT" size="3" default="7" autoIncrement="false"/>
+      <column name="communication5Type" primaryKey="false" required="true" type="TINYINT" size="3" default="10" autoIncrement="false"/>
+      <column name="communication6Type" primaryKey="false" required="true" type="TINYINT" size="3" default="14" autoIncrement="false"/>
+      <column name="defaultKonto" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="defaultAnsprechpartner" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="werber" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="custom1" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="custom2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="custom3" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="custom4" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="custom5" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="kinder">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="parentId" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="mandantenId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="kindName" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="kindVorname" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="kindGeburtsdatum" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="kindBeruf" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="kindWohnort" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="custom" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1972-01-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="kunden">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="betreuer" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="besitzer" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="mandantenId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="kundenNr" primaryKey="false" required="true" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="anrede" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="titel" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="firma" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="vorname" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="vorname2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="vornameWeitere" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="nachname" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="street" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="plz" primaryKey="false" required="false" type="VARCHAR" size="50" autoIncrement="false"/>
+      <column name="stadt" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bundesland" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="land" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="adresseZusatz" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="adresseZusatz2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication1" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication3" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication4" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication5" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication6" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication1Type" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <column name="communication2Type" primaryKey="false" required="true" type="TINYINT" size="3" default="1" autoIncrement="false"/>
+      <column name="communication3Type" primaryKey="false" required="true" type="TINYINT" size="3" default="4" autoIncrement="false"/>
+      <column name="communication4Type" primaryKey="false" required="true" type="TINYINT" size="3" default="7" autoIncrement="false"/>
+      <column name="communication5Type" primaryKey="false" required="true" type="TINYINT" size="3" default="10" autoIncrement="false"/>
+      <column name="communication6Type" primaryKey="false" required="true" type="TINYINT" size="3" default="14" autoIncrement="false"/>
+      <column name="typ" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="familienStand" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="ehepartnerId" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="geburtsdatum" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="nationalitaet" primaryKey="false" required="false" type="VARCHAR" size="500" default="Unbekannt" autoIncrement="false"/>
+      <column name="beruf" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="berufsTyp" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="berufsOptionen" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="berufsBesonderheiten" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="anteilBuerotaetigkeit" primaryKey="false" required="false" type="VARCHAR" size="500" default="100 %" autoIncrement="false"/>
+      <column name="beginnRente" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="beamter" primaryKey="false" required="false" type="BIT" autoIncrement="false"/>
+      <column name="oeffentlicherDienst" primaryKey="false" required="false" type="BIT" autoIncrement="false"/>
+      <column name="einkommen" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="einkommenNetto" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="steuertabelle" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="steuerklasse" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="kirchenSteuer" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="kinderZahl" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="kinderFreibetrag" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="religion" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="rolleImHaushalt" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="weiterePersonen" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="weiterePersonenInfo" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="familienPlanung" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="werberKennung" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="defaultKonto" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="custom1" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="custom2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="custom3" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="custom4" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="custom5" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="geburtsname" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="ehedatum" primaryKey="false" required="false" type="VARCHAR" size="100" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="kunden_betreuung">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="kundenKennung" primaryKey="false" required="true" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="kundenTyp" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="prioritaet" primaryKey="false" required="false" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <column name="loyalitaet" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="zielgruppe" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="ersterKontakt" primaryKey="false" required="false" type="VARCHAR" size="30" autoIncrement="false"/>
+      <column name="letzerKontakt" primaryKey="false" required="false" type="VARCHAR" size="30" autoIncrement="false"/>
+      <column name="letzteRoutine" primaryKey="false" required="false" type="VARCHAR" size="30" autoIncrement="false"/>
+      <column name="maklerVertrag" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="maklerBeginn" primaryKey="false" required="false" type="VARCHAR" size="30" autoIncrement="false"/>
+      <column name="maklerEnde" primaryKey="false" required="false" type="VARCHAR" size="30" autoIncrement="false"/>
+      <column name="analyse" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="analyseLetzte" primaryKey="false" required="false" type="VARCHAR" size="30" autoIncrement="false"/>
+      <column name="analyseNaechste" primaryKey="false" required="false" type="VARCHAR" size="30" autoIncrement="false"/>
+      <column name="erstinformationen" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="verwaltungskosten" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="newsletter" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="kundenzeitschrift" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="geburtstagskarte" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="weihnachtskarte" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="osterkarte" primaryKey="false" required="false" type="BIT" default="0" autoIncrement="false"/>
+      <column name="dtrentenversicherungNr" primaryKey="false" required="false" type="VARCHAR" size="250" autoIncrement="false"/>
+      <column name="gkvBeitrag" primaryKey="false" required="true" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="kvBeitrag" primaryKey="false" required="true" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="pflegeBeitrag" primaryKey="false" required="true" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="krankenversicherung" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="kvTyp" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <column name="kvNummer" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="gestorben" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="gestorbenDatum" primaryKey="false" required="false" type="VARCHAR" size="50" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="kunden_grp">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="grpid" primaryKey="false" required="true" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="kundenKennung" primaryKey="false" required="true" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+    </table>
+    <table name="kunden_zusatzadressen">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="creator" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="kundenKennung" primaryKey="false" required="true" type="VARCHAR" size="500" default="-1" autoIncrement="false"/>
+      <column name="versichererId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="name" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="nameZusatz" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="nameZusatz2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="street" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="plz" primaryKey="false" required="false" type="VARCHAR" size="50" autoIncrement="false"/>
+      <column name="ort" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="bundesland" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="land" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication1" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication3" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication4" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication5" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication6" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="communication1Type" primaryKey="false" required="false" type="INTEGER" size="10" default="0" autoIncrement="false"/>
+      <column name="communication2Type" primaryKey="false" required="false" type="INTEGER" size="10" default="1" autoIncrement="false"/>
+      <column name="communication3Type" primaryKey="false" required="false" type="INTEGER" size="10" default="4" autoIncrement="false"/>
+      <column name="communication4Type" primaryKey="false" required="false" type="INTEGER" size="10" default="7" autoIncrement="false"/>
+      <column name="communication5Type" primaryKey="false" required="false" type="INTEGER" size="10" default="10" autoIncrement="false"/>
+      <column name="communication6Type" primaryKey="false" required="false" type="INTEGER" size="10" default="14" autoIncrement="false"/>
+      <column name="custom1" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="custom2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="custom3" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="mandanten">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="parentId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="creatorId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="firmenName" primaryKey="false" required="true" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenZusatz" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="firmenZusatz2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="vermittlungNamen" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="vertretungsBerechtigtePosition" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="vertretungsBerechtigteVorname" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="vertretungsBerechtigteNachname" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="vertretungsBerechtigteIHKErlaubnis" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="firmenTyp" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="firmenRechtsform" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="postfach" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="postfachPlz" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="postfachOrt" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="filialTyp" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="filialMitarbeiterZahl" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="geschaeftsleiter" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="gesellschafter" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="steuerNummer" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="ustNummer" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="vermoegensHaftpflicht" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="beteiligungenVU" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="beteiligungenMAK" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="verbandsMitgliedschaften" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="beraterTyp" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="ihkName" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="ihkRegistriernummer" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="ihkStatus" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="ihkAbweichungen" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="versicherListe" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="is34c" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="is34d" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="gewerbeamtShow" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="gewerbeamtName" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="gewerbeamtPLZ" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="gewerbeamtOrt" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="gewerbeamtStrasse" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="handelsregisterShow" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="handelsregisterName" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="handelsregisterStrasse" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="handelsregisterPLZ" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="handelsregisterOrt" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="handelsregisterRegistrierNummer" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="logo" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="beschwerdeStellen" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="adressZusatz" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="adressZusatz2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="strasse" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="plz" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="ort" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bundesland" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="land" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bankName" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bankKonto" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bankEigentuemer" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bankLeitzahl" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bankIBAN" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bankBIC" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="telefon" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="telefon2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="telefon3" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="mobil" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="mobil2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="fax" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="fax2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="email" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="email2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="secureMail" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="emailSignatur" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="homepage" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="homepage2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="custom1" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom2" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom3" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom4" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom5" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom6" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom7" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom8" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom9" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom10" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="lastUsed" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="messages">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="mandantenId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="senderId" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="empfaengerId" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="md5sum" primaryKey="false" required="false" type="VARCHAR" size="255" default="3342" autoIncrement="false"/>
+      <column name="betreff" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="context" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="tag" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="mread" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="false" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="nachrichten">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="mandantenId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="true" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="betreff" primaryKey="false" required="true" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="context" primaryKey="false" required="true" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="tag" primaryKey="false" required="true" type="VARCHAR" size="255" default="Standard" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="INTEGER" size="10" default="0" autoIncrement="false"/>
+    </table>
+    <table name="newsletter">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="benutzerId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="sender" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="senderMail" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="subject" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="text" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="send" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="false" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="newsletter_sub">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="kennung" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="name" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="email" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="false" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="notizen">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="creatorId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="priv" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="kundenKennung" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="versichererId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="produktId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="vertragId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="betreff" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="text" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="tag" primaryKey="false" required="true" type="VARCHAR" size="500" default="Standard" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="produkte">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="versichererId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="sparteId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="creatorId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="art" primaryKey="false" required="true" type="TINYINT" size="3" default="-1" autoIncrement="false"/>
+      <column name="tarif" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="tarifBasis" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="bezeichnung" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="kuerzel" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="vertragsmaske" primaryKey="false" required="false" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <column name="vermittelbar" primaryKey="false" required="true" type="BIT" default="1" autoIncrement="false"/>
+      <column name="versicherungsart" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="risikotyp" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="versicherungsSumme" primaryKey="false" required="false" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="bewertungsSumme" primaryKey="false" required="false" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="bedingungen" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="selbstbeteiligung" primaryKey="false" required="false" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="nettopraemiePauschal" primaryKey="false" required="false" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="nettopraemieZusatz" primaryKey="false" required="false" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="nettopraemieGesamt" primaryKey="false" required="false" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="zusatzEinschluesse" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="zusatzInfo" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="custom1" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="custom2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="custom3" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="custom4" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="custom5" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="session">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="benutzerId" primaryKey="false" required="true" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="start" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="lastrefresh" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="session_id" primaryKey="false" required="true" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="anwendung" primaryKey="false" required="true" type="TINYINT" size="3" autoIncrement="false"/>
+      <column name="build" primaryKey="false" required="true" type="VARCHAR" size="250" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <unique name="session_id">
+        <unique-column name="session_id"/>
+      </unique>
+    </table>
+    <table name="sparten">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="spartenNummer" primaryKey="false" required="false" type="VARCHAR" size="100" autoIncrement="false"/>
+      <column name="bezeichnung" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="gruppe" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="steuersatz" primaryKey="false" required="true" type="INTEGER" size="10" default="0" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="termine">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="besitzer" primaryKey="false" required="true" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="pub" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="beschreibung" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="ort" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="tag" primaryKey="false" required="true" type="VARCHAR" size="255" default="Standard" autoIncrement="false"/>
+      <column name="kundeKennung" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="versichererId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="teilnehmer" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="erinnerung" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="start" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="ende" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="INTEGER" size="10" default="0" autoIncrement="false"/>
+    </table>
+    <table name="textbausteine">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="grp" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="name" primaryKey="false" required="true" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="beschreibung" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="textbausteine_grp">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="name" primaryKey="false" required="true" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="versicherer">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="parentId" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="parentName" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="vuNummer" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="name" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="nameZusatz" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="nameZusatz2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="kuerzel" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="gesellschaftsNr" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="strasse" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="plz" primaryKey="false" required="false" type="VARCHAR" size="100" autoIncrement="false"/>
+      <column name="stadt" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bundesLand" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="land" primaryKey="false" required="true" type="VARCHAR" size="255" default="Deutschland" autoIncrement="false"/>
+      <column name="postfach" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="postfachName" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="postfachPlz" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="postfachOrt" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="vermittelbar" primaryKey="false" required="true" type="BIT" default="1" autoIncrement="false"/>
+      <column name="communication1" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication3" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication4" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication5" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication6" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication1Type" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <column name="communication2Type" primaryKey="false" required="true" type="TINYINT" size="3" default="1" autoIncrement="false"/>
+      <column name="communication3Type" primaryKey="false" required="true" type="TINYINT" size="3" default="4" autoIncrement="false"/>
+      <column name="communication4Type" primaryKey="false" required="true" type="TINYINT" size="3" default="7" autoIncrement="false"/>
+      <column name="communication5Type" primaryKey="false" required="true" type="TINYINT" size="3" default="10" autoIncrement="false"/>
+      <column name="communication6Type" primaryKey="false" required="true" type="TINYINT" size="3" default="14" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="custom1" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom2" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom3" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom4" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom5" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <unique name="vuNummer">
+        <unique-column name="vuNummer"/>
+      </unique>
+    </table>
+    <table name="versicherer_all">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="parentId" primaryKey="false" required="false" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="parentName" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="vuNummer" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="name" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="nameZusatz" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="nameZusatz2" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="kuerzel" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="gesellschaftsNr" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="strasse" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="plz" primaryKey="false" required="false" type="VARCHAR" size="100" autoIncrement="false"/>
+      <column name="stadt" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bundesLand" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="land" primaryKey="false" required="true" type="VARCHAR" size="255" default="Deutschland" autoIncrement="false"/>
+      <column name="postfach" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="postfachName" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="postfachPlz" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="postfachOrt" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="vermittelbar" primaryKey="false" required="true" type="BIT" default="1" autoIncrement="false"/>
+      <column name="communication1" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication2" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication3" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication4" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication5" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication6" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="communication1Type" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <column name="communication2Type" primaryKey="false" required="true" type="TINYINT" size="3" default="1" autoIncrement="false"/>
+      <column name="communication3Type" primaryKey="false" required="true" type="TINYINT" size="3" default="4" autoIncrement="false"/>
+      <column name="communication4Type" primaryKey="false" required="true" type="TINYINT" size="3" default="7" autoIncrement="false"/>
+      <column name="communication5Type" primaryKey="false" required="true" type="TINYINT" size="3" default="10" autoIncrement="false"/>
+      <column name="communication6Type" primaryKey="false" required="true" type="TINYINT" size="3" default="14" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="custom1" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom2" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom3" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom4" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="custom5" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <unique name="vuNummer">
+        <unique-column name="vuNummer"/>
+      </unique>
+    </table>
+    <table name="vertraege">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="parentId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="versichererId" primaryKey="false" required="true" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="produktId" primaryKey="false" required="true" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="kundenKennung" primaryKey="false" required="true" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bankkontoId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="zusatzadresseId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="beratungsprotokollId" primaryKey="false" required="false" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="mandantenId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="true" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="vertragsTyp" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <column name="vertragGrp" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="policennr" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="policeDatum" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="wertungDatum" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="courtage" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="zahlWeise" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+      <column name="zahlArt" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="selbstbeteiligung" primaryKey="false" required="true" type="INTEGER" size="10" default="0" autoIncrement="false"/>
+      <column name="jahresNetto" primaryKey="false" required="true" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="steuer" primaryKey="false" required="true" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="gebuehr" primaryKey="false" required="true" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="jahresBrutto" primaryKey="false" required="true" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="rabatt" primaryKey="false" required="true" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="zuschlag" primaryKey="false" required="true" type="DOUBLE" size="11,2" default="0.00" autoIncrement="false"/>
+      <column name="waehrungId" primaryKey="false" required="true" type="INTEGER" size="10" default="1" autoIncrement="false"/>
+      <column name="antrag" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="faellig" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="hauptfaellig" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="beginn" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="ablauf" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="maklerEingang" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="stornoDatum" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="storno" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="stornoGrund" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="laufzeit" primaryKey="false" required="true" type="INTEGER" size="10" default="0" autoIncrement="false"/>
+      <column name="courtage_datum" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="custom1" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="custom2" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="custom3" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="custom4" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="custom5" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="vertraege_grp">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="grpid" primaryKey="false" required="true" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="vertragid" primaryKey="false" required="true" type="INTEGER" size="10" autoIncrement="false"/>
+      <column name="comments" primaryKey="false" required="true" type="VARCHAR" size="255" autoIncrement="false"/>
+    </table>
+    <table name="waehrungen">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="ordering" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="isocode" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="bezeichnung" primaryKey="false" required="true" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="neuanlage" primaryKey="false" required="true" type="BIT" default="1" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="webconfig">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="username" primaryKey="false" required="true" type="VARCHAR" size="500" default="-1" autoIncrement="false"/>
+      <column name="which" primaryKey="false" required="true" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="value" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+    </table>
+    <table name="wiedervorlagen">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="benutzerId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="kundeKennung" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="type" primaryKey="false" required="true" type="TINYINT" size="3" default="-1" autoIncrement="false"/>
+      <column name="pub" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="beschreibung" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="tag" primaryKey="false" required="true" type="VARCHAR" size="255" default="Standard" autoIncrement="false"/>
+      <column name="params" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="erinnerung" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="date" primaryKey="false" required="true" type="DATE" size="10" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="lastmodified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+    <table name="wissendokumente">
+      <column name="id" primaryKey="true" required="true" type="INTEGER" size="10" autoIncrement="true"/>
+      <column name="creator" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="benutzerId" primaryKey="false" required="true" type="INTEGER" size="10" default="-1" autoIncrement="false"/>
+      <column name="filetype" primaryKey="false" required="true" type="TINYINT" size="3" default="-1" autoIncrement="false"/>
+      <column name="category" primaryKey="false" required="true" type="VARCHAR" size="500" default="Unbekannt" autoIncrement="false"/>
+      <column name="name" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="fileName" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="fullPath" primaryKey="false" required="true" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="label" primaryKey="false" required="false" type="VARCHAR" size="1000" autoIncrement="false"/>
+      <column name="beschreibung" primaryKey="false" required="false" type="LONGVARCHAR" size="65535" autoIncrement="false"/>
+      <column name="checksum" primaryKey="false" required="false" type="VARCHAR" size="255" autoIncrement="false"/>
+      <column name="tag" primaryKey="false" required="true" type="VARCHAR" size="255" default="Standard" autoIncrement="false"/>
+      <column name="created" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="1971-02-01 00:00:00" autoIncrement="false"/>
+      <column name="modified" primaryKey="false" required="true" type="TIMESTAMP" size="19" default="CURRENT_TIMESTAMP" autoIncrement="false"/>
+      <column name="triggerClass" primaryKey="false" required="false" type="VARCHAR" size="500" autoIncrement="false"/>
+      <column name="pubAvailable" primaryKey="false" required="true" type="BIT" default="0" autoIncrement="false"/>
+      <column name="status" primaryKey="false" required="true" type="TINYINT" size="3" default="0" autoIncrement="false"/>
+    </table>
+  </database>

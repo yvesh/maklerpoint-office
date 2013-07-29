@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/maklerpoint/!svn/ver/2/office/platform/ext/iReport/ireport/samples/Subreports
+END
+subreport_orders.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maklerpoint/!svn/ver/2/office/platform/ext/iReport/ireport/samples/Subreports/subreport_orders.jrxml
+END
+master.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/maklerpoint/!svn/ver/2/office/platform/ext/iReport/ireport/samples/Subreports/master.jrxml
+END
+subreport_cities.jrxml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maklerpoint/!svn/ver/2/office/platform/ext/iReport/ireport/samples/Subreports/subreport_cities.jrxml
+END
+master.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/maklerpoint/!svn/ver/2/office/platform/ext/iReport/ireport/samples/Subreports/master.pdf
+END
+subreport_cities.jasper
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/maklerpoint/!svn/ver/2/office/platform/ext/iReport/ireport/samples/Subreports/subreport_cities.jasper
+END
+master.jasper
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/maklerpoint/!svn/ver/2/office/platform/ext/iReport/ireport/samples/Subreports/master.jasper
+END
+subreport_orders.jasper
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/maklerpoint/!svn/ver/2/office/platform/ext/iReport/ireport/samples/Subreports/subreport_orders.jasper
+END

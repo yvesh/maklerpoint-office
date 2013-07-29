@@ -1,0 +1,22 @@
+Form.title=MaklerPoint Datensicherung
+#NOI18N
+panel_holder.background=254, 254, 254
+#NOI18N
+panel_buttons.background=254, 254, 254
+#NOI18N
+panel_content.background=254, 254, 254
+jLabel1.text=Ziel:
+jLabel2.text=Letztes Sicherung am:
+jLabel3.text=Letztes Backup Status:
+jLabel4.text=N\u00e4chste Sicherung am:
+label_status.text=Statusdisplay
+label_lastbackup.text=date
+label_lastbackupstatus.text=Das letzte Backup war erfolgreich
+label_nextbackup.text=date
+#NOI18N
+label_lastbackupstatus.foreground=76, 146, 7
+jLabel5.text=
+#NOI18N
+jLabel5.icon=bg-backup-blue.png
+label_creator.text=(von User)
+label_ziel.text=ziel

@@ -1,0 +1,23 @@
+jPanel1.border.title=Basis Einstellungen
+jLabel4.text=Password:
+field_user.text=
+jLabel3.text=Benutzername:
+jLabel2.text=Server Port:
+field_port.text=
+jLabel1.text=Server Adresse:
+jLabel5.text=Server Typ:
+jLabel6.text=Datenbank Name:
+field_serveraddress.text=localhost
+field_databasename.text=maklerpointdb
+btnTest.text=Datenbank Einstellungen testen
+#NOI18N
+btnTest.icon=/de/acyrance/CRM/Gui/resources/icon_clean/database-network.png
+jToolTipLabel1.text=
+#NOI18N
+jToolTipLabel1.icon=/de/acyrance/CRM/Gui/resources/information.png
+jToolTipLabel1.toolTipText=Geben Sie hier den von Ihnen verwendeten Servertyp an. Beim lokalen Datenbankserver Derby m\u00fcssen Sie keine weiteren Einstellunge vornehmen.
+jToolTipLabel2.toolTipText=Geben Sie hier die Adresse des Servers an.
+jToolTipLabel3.toolTipText=Geben Sie hier den Port des Servers an oder lassen Sie das Feld komplett leer um den Standard Port des jeweiligen Datenbankservers zu verwenden.
+jToolTipLabel4.toolTipText=Geben Sie hier den Namen der Datenbank an.
+jToolTipLabel5.toolTipText=Geben Sie hier den Benutzernamen f\u00fcr die Datenbank an.
+jToolTipLabel6.toolTipText=Geben Sie hier das Password f\u00fcr die Datenbank an.

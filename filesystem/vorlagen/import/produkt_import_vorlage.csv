@@ -1,0 +1,2 @@
+GesellschaftsId (!);SparteId;ErstellerId;Tarif;Tarif Basis;Bezeichnung;Kürzel;Vertragsmaske;Vermittelbar (leer für ja);Art;Risikotyp (id);WaehrungId (1 für Euro);Versicherungssumme;Bewertungssumme;Bedingungen;Selbstbeteiligung (z.B. 100,00);Nettoprämie Pauschal;Nettoprämie Zusatz;Nettoprämie Gesamt;Zusatz Einschlüsse;Zusatzinformationen;Benutzerdefiniert 1;Benutzerdefiniert 2;Benutzerdefiniert 3;Benutzerdefiniert 4;Benutzerdefiniert 5;Kommentare;Erstellt (z.B. 13.01.2003 14:38);Status (leer für Aktiv)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -1,0 +1,25 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+Form.title=Sparten Verwaltung
+btnNeu.text=Neu
+#NOI18N
+btnNeu.icon=/de/acyrance/CRM/Gui/resources/add.png
+jLabel1.text=Bezeichnung:
+field_bezeichnung.text=
+jLabel2.text=Gruppe:
+jLabel3.text=Steuersatz:
+jLabel4.text=%
+jLabel5.text=Sparten Nummer:
+field_steuersatz.text=0
+field_spartennummer.text=940
+jLabel6.text=Suche:
+#NOI18N
+jLabel6.icon=/de/acyrance/CRM/Gui/resources/magnifier.png
+field_search.text=
+btnDelete.text=L\u00f6schen
+#NOI18N
+btnDelete.icon=/de/acyrance/CRM/Gui/resources/cross.png
+btnSearch.text=
+#NOI18N
+btnSearch.icon=/de/acyrance/CRM/Gui/resources/right.png

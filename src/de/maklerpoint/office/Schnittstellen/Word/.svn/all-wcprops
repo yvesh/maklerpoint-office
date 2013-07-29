@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word
+END
+ExportBeratungsVerzicht.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportBeratungsVerzicht.java
+END
+ExportMaklerAuftrag.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportMaklerAuftrag.java
+END
+ExportBeratungsDokumentation.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportBeratungsDokumentation.java
+END
+ExportFirmenInfoblatt.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportFirmenInfoblatt.java
+END
+ExportBeratungsAnschreiben.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportBeratungsAnschreiben.java
+END
+ExportVersichererDatenblatt.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportVersichererDatenblatt.java
+END
+ExportPrivatKundenInfoblatt.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportPrivatKundenInfoblatt.java
+END
+ExportMaklerEinzelAuftrag.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportMaklerEinzelAuftrag.java
+END
+ExportBenutzerDatenblatt.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportBenutzerDatenblatt.java
+END
+ExportKundenInformationen.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportKundenInformationen.java
+END
+ExportBrief.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportBrief.java
+END
+ExportPrivatKundenDatenblatt.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportPrivatKundenDatenblatt.java
+END
+DocXConvert.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/DocXConvert.java
+END
+ExportFirmenDatenblatt.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/ExportFirmenDatenblatt.java
+END

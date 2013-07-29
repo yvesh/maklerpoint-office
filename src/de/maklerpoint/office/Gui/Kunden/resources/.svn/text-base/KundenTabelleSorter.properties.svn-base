@@ -1,0 +1,14 @@
+jLabel1.text=Aktive Elemente
+btnSave.text=Speichern
+btnCancel.text=Abbrechen
+jLabel2.text=Deaktivierte Elemente
+btnUp.text=
+#NOI18N
+btnDown.icon=/de/acyrance/CRM/Gui/resources/down.png
+#NOI18N
+btnRight.icon=/de/acyrance/CRM/Gui/resources/right.png
+#NOI18N
+btnLeft.icon=/de/acyrance/CRM/Gui/resources/left.png
+#NOI18N
+btnUp.icon=/de/acyrance/CRM/Gui/resources/up.png
+Form.title=Tabellen Konfiguration

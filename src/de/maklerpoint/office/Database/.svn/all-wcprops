@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Database
+END
+DatabaseDrivers.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Database/DatabaseDrivers.java
+END
+DatabaseTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Database/DatabaseTypes.java
+END
+DatabaseConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Database/DatabaseConnection.java
+END
+DatabaseHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Database/DatabaseHelper.java
+END
+iDBTools.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Database/iDBTools.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer
+END
+VersichererDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/VersichererDialog.java
+END
+ProduktDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/ProduktDialog.java
+END
+PanelVersichererUebersicht.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/PanelVersichererUebersicht.java
+END
+VersichererDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/VersichererDialog.form
+END
+AddVersichererPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/AddVersichererPanel.java
+END
+PanelProduktUebersicht.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/PanelProduktUebersicht.java
+END
+ProduktDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/ProduktDialog.form
+END
+PanelVersichererUebersicht.form
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/PanelVersichererUebersicht.form
+END
+PanelProduktUebersicht.form
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/PanelProduktUebersicht.form
+END
+AddProduktePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/AddProduktePanel.java
+END

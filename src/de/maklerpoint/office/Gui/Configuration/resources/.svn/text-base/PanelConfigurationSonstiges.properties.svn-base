@@ -1,0 +1,6 @@
+jPanel1.border.title=MaklerPoint Start
+jToolTipLabel1.toolTipText=Geben Sie hier die Adresse Ihres SMTP Servers an. Weitere Informationen finden Sie in der Hilfe.
+check_searchupdates.text=Nach Updates suchen (Empfohlen)
+check_synchronizeLocaldatabase.text=Lokale Datenbank synchronisieren
+check_showtipp.text=Tipp des Tages anzeigen
+check_showwiedervorlagen.text=Aktuelle Wiedervorlagen anzeigen

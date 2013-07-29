@@ -1,0 +1,14 @@
+jLabel1.text=Welche Installationsmethode wollen Sie verwenden?
+#NOI18N
+btnEinzel.icon=/de/acyrance/CRM/Gui/resources/bigicons/exec.png
+btnEinzel.text=
+#NOI18N
+btnNetzwerk.icon=/de/acyrance/CRM/Gui/resources/bigicons/Entire-Network.png
+btnNetzwerk.actionCommand=
+btnNetzwerk.text=
+#NOI18N
+btnConnect.icon=/de/acyrance/CRM/Gui/resources/bigicons/Internet Connection Tools.png
+btnConnect.text=
+label_netzwerk.text=<html><body><strong>Netzwerk Neuinstallation</strong><br />MaklerPoint Office erstellt eine neue Datenbank im Netzwerk zu<br />der sich auch andere Computer im Netzwerk verbinden k\u00f6nnen.</body></html>
+labelConnect.text=<html><body><strong>Zur Datenbank verbinden</strong><br />MaklerPoint Office verbindet sich zu einer bestehenden <br /> Datenbank im Netzwerk. </body></html>
+labelEinzel.text=<html><body><strong>Einzelplatzinstallation</strong><br />MaklerPoint Office wird auf dem Computer mit einer lokalen <br />Datenbank installiert</body></html>

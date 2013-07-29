@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/XML
+END
+PrivatkundenXMLExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/XML/PrivatkundenXMLExport.java
+END
+BenutzerXMLExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/XML/BenutzerXMLExport.java
+END
+FirmenkundenXMLExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/XML/FirmenkundenXMLExport.java
+END
+TermineXMLExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/XML/TermineXMLExport.java
+END
+ProduktXMLExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/XML/ProduktXMLExport.java
+END
+VertragXMLExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/XML/VertragXMLExport.java
+END
+VersichererXMLExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/XML/VersichererXMLExport.java
+END

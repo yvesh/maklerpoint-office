@@ -1,0 +1,36 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+jLabel1.text=Schnellsuche
+btnAllekunden.text=Alle Kunden
+btnEigenekunden.text=Eigene Kunden
+jLabel4.text=\ =
+jLabel3.text=\ Feld
+jLabel2.text=Detailsuche
+btnSchnellSuche.toolTipText=Schnellsuche
+btnStatistik.text=Statistik
+btnReport.text=Report
+btnKarte.toolTipText=Navigation zum Kunden
+btnKarte.text=Karte
+btnBrief.toolTipText=E-Mail / Brief verfassen
+btnBrief.text=E-Mail / Brief
+btnDokumente.toolTipText=Rechnung f\u00fcr Kunde(n) erstellen
+btnDokumente.text=Dokumente
+btnRechnung1.toolTipText=Kunde Versicherungs\u00fcbersicht
+btnRechnung1.text=Versicherungen
+btnRechnung.toolTipText=Rechnung f\u00fcr Kunde(n) erstellen
+btnRechnung.text=Rechnung
+btnArchive.toolTipText=Ausgew\u00e4hlte Kunde(n) archivieren
+btnArchive.text=Archivieren
+table_kunden.toolTipText=W\u00e4hlen Sie eine Zeile aus und klicken Sie mit der rechten Maustaste f\u00fcr weitere Optionen
+panel_verlauf.TabConstraints.tabTitle=Verlauf
+panel_notizen.TabConstraints.tabTitle=Notizen
+panel_kontaktdaten.TabConstraints.tabTitle=Betreuung und Unterlagen
+panel_termineaufgaben.TabConstraints.tabTitle=Termine / Aufgaben / Wiedervorlagen
+panel_beratungsdokumentation.TabConstraints.tabTitle=Beratungsdokumentation
+radio_erledigteschaeden.text=Erledigte Schadensf\u00e4lle
+radio_alleschaeden.text=Alle Schadensf\u00e4lle
+radio_offeneschaeden.text=Offene Schadensf\u00e4lle
+panel_schaeden.TabConstraints.tabTitle=Sch\u00e4den
+panel_vertraege.TabConstraints.tabTitle=Vertr\u00e4ge
+label_tablestatustext.text=x Datens\u00e4tze

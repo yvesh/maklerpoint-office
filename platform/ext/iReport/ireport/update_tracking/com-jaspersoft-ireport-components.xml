@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module codename="com.jaspersoft.ireport.components">
+    <module_version install_time="1303227128769" last="true" origin="installer" specification_version="1.0">
+        <file crc="1223143337" name="config/Modules/com-jaspersoft-ireport-components.xml"/>
+        <file crc="670536365" name="modules/com-jaspersoft-ireport-components.jar"/>
+    </module_version>
+</module>

@@ -1,0 +1,20 @@
+jLabel1.text=
+#NOI18N
+jLabel1.icon=reminder-blue.gif
+Form.title=Termin Erinnerung
+btn_ok.text=Ok
+jLabel2.text=Erinnerung wiederholen
+jLabel3.text=Ort:
+editor_ort.contentType=text/html
+jLabel4.text=Details
+#NOI18N
+jLabel4.font=Bitstream Vera Sans-Bold-12
+#NOI18N
+jLabel5.font=Bitstream Vera Sans 12 Bold
+jLabel5.text=Wiederholung
+jLabel6.text=Kunde:
+label_kunde.text=Keiner
+jLabel7.text=Zeitraum:
+#NOI18N
+jLabel7.font=Bitstream Vera Sans-Bold-12
+label_zeitraum.text=Keiner

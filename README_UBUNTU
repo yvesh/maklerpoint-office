@@ -1,0 +1,9 @@
+MaklerPoint Office ist voll kompatibel mit Ubuntu ab Version 9.04, bitte beachten
+Sie aber die folgenden Informationen.
+
+Es wird empfohlen die Java Runtime von Oracle (sun-jre6) anstelle der standard-
+mässig installierten Openjdk Runtime zu verwenden.
+
+Unter Ubuntu 11.10 (Oneiric Ocelot) müssen Sie für die volle Funktionalität noch
+das Paket libxss-dev installieren. Andernfalls stehen die automatische Abmeldung 
+und einige Status-Funktionen nicht zur Verfügung.

@@ -1,0 +1,11 @@
+# Application global resources
+
+Application.name = acyranceCRM
+Application.title = MaklerPoint Office
+Application.version = 0.61 Beta
+Application.vendor = MaklerPoint Software - Yves Hoppe
+Application.homepage = http://www.maklerpoint.de
+Application.description = http://www.maklerpoint.de
+Application.vendorId = YvesHoppe
+Application.id = MaklerPoint Office
+Application.lookAndFeel = system

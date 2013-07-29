@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs
+END
+TabPanelProduktHaftung.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktHaftung.java
+END
+TabPanelProduktRisikotexte.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktRisikotexte.java
+END
+TabPanelProduktHaftung.form
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktHaftung.form
+END
+TabPanelProduktRisikotexte.form
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktRisikotexte.form
+END
+TabPanelProduktCourtage.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktCourtage.java
+END
+TabPanelVersichererBestandsprovision.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelVersichererBestandsprovision.java
+END
+TabPanelProduktCourtage.form
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktCourtage.form
+END
+TabPanelVersichererBestandsprovision.form
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelVersichererBestandsprovision.form
+END
+TabPanelVersichererProdukte.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelVersichererProdukte.java
+END
+TabPanelVersichererProdukte.form
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelVersichererProdukte.form
+END
+TabPanelProduktBewertung.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktBewertung.java
+END
+TabPanelProduktUmsatzsteuer.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktUmsatzsteuer.java
+END
+TabPanelProduktBewertung.form
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktBewertung.form
+END
+TabPanelProduktUmsatzsteuer.form
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktUmsatzsteuer.form
+END
+TabPanelProvisionsstatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProvisionsstatus.java
+END
+iTabsAbstractProdukt.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/iTabsAbstractProdukt.java
+END
+TabPanelProvisionsstatus.form
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProvisionsstatus.form
+END
+TabPanelVersichererWeiteres.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelVersichererWeiteres.java
+END
+TabPanelProduktGruppen.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktGruppen.java
+END
+TabPanelVersichererWeiteres.form
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelVersichererWeiteres.form
+END
+TabPanelProduktGruppen.form
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Versicherer/Tabs/TabPanelProduktGruppen.form
+END

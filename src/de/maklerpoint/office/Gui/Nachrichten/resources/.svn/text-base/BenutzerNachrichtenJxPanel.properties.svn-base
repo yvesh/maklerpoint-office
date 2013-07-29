@@ -1,0 +1,43 @@
+Form.title=Benutzernachrichten :: MaklerPoint Office
+#NOI18N
+Form.background=254, 254, 254
+neuNachrichtMenuItem.text=Neue Nachricht
+label_tablestatustext.text=Keine Datens\u00e4tze
+btnArchive.text=Archivieren
+btnRefresh.toolTipText=Tabelle aktualisieren
+btnDelete.toolTipText=Ausgew\u00e4hlte Nachricht l\u00f6schen
+btnDelete.text=L\u00f6schen
+btnArchive.toolTipText=Ausgew\u00e4hlte Nachricht archivieren
+btnNeu.text=Neu
+btnNeu.toolTipText=Neue Nachricht erstellen
+#NOI18N
+btnNeu.icon=/de/acyrance/CRM/Gui/resources/add.png
+btnEingang.text=Posteingang
+btnAusgang.text=Postausgang
+alleDBMenuItem.text=Alle Nachrichten
+deletedDBMenuItem.toolTipText=
+deletedDBMenuItem.text=Gel\u00f6schte Nachrichten
+archivedDBMenuItem.toolTipText=
+archivedDBMenuItem.text=Archivierte Nachrichten
+aktiveDBMenuItem.toolTipText=
+aktiveDBMenuItem.text=Aktive Nachrichten
+alleDBMenuItem.toolTipText=Zeigt alle Benutzernachrichten (auch archivierte, gel\u00f6schte etc.)
+#NOI18N
+btnEingang.icon=/de/acyrance/CRM/Gui/resources/icon_clean/mail-receive.png
+#NOI18N
+btnAusgang.icon=/de/acyrance/CRM/Gui/resources/icon_clean/mail-send.png
+label_activemail.text=Keine Nachricht ausgew\u00e4hlt
+#NOI18N
+btnRefresh.icon=/de/acyrance/CRM/Gui/resources/icon_clean/table-refresh.png
+#NOI18N
+btnArchive.icon=/de/acyrance/CRM/Gui/resources/compress.png
+#NOI18N
+btnDelete.icon=/de/acyrance/CRM/Gui/resources/cross.png
+btnAntworten.toolTipText=Auf ausgew\u00e4hlte E-Mail antworten
+btnAntworten.text=Antworten
+#NOI18N
+btnAntworten.icon=/de/acyrance/CRM/Gui/resources/icon_clean/mail-reply.png
+archiveMessageMenuItem.text=Nachricht archivieren
+deleteMessageMenuItem.text=Nachricht l\u00f6schen
+answerMessageMenuItem.text=Auf Nachricht anworten
+refreshMenuItem.text=Tabelle aktualisieren

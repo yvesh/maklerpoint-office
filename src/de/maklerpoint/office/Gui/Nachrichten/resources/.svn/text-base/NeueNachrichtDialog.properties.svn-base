@@ -1,0 +1,12 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+Form.title=Neue Nachricht erstellen
+jLabel1.text=Betreff:
+fieldBetreff.text=
+jLabel2.text=Nachricht:
+jLabel4.text=Tag (Markierung):
+btnCancel.text=Abbrechen
+btnSave.text=Speichern
+#NOI18N
+jLabel2.font=Bitstream Vera Sans-Plain-12

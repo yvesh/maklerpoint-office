@@ -1,0 +1,12 @@
+jLabel1.text=Markierungs-Name:
+fieldTagname.text=
+#NOI18N
+btnBgcolor.icon=/de/acyrance/CRM/Gui/resources/farbe.gif
+btnBgcolor.text=Hintergrund
+#NOI18N
+btnFontcolor.icon=/de/acyrance/CRM/Gui/resources/farbe.gif
+btnFontcolor.text=Schrift
+label_beispiel.text=Beispiel Markierung
+btnCancel.text=Abbrechen
+btnSave.text=Speichern
+tagDialog.title=Neue Markierung (Tag)

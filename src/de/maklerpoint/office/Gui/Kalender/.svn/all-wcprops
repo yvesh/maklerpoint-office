@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender
+END
+KalenderWochePanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/KalenderWochePanel.java
+END
+WiedervorlagenErinnerungDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/WiedervorlagenErinnerungDialog.java
+END
+TimeSpinField.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/TimeSpinField.java
+END
+WiedervorlagenErinnerungDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/WiedervorlagenErinnerungDialog.form
+END
+NeueAufgabe.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/NeueAufgabe.java
+END
+panelTagesAnsicht.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/panelTagesAnsicht.java
+END
+NeueAufgabe.form
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/NeueAufgabe.form
+END
+panelTagesAnsicht.form
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/panelTagesAnsicht.form
+END
+panelKalenderHolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/panelKalenderHolder.java
+END
+panelWochenAnsicht.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/panelWochenAnsicht.java
+END
+panelKalenderHolder.form
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/panelKalenderHolder.form
+END
+panelWochenAnsicht.form
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/panelWochenAnsicht.form
+END
+TerminHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/TerminHelper.java
+END
+TerminErinnerungDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/TerminErinnerungDialog.java
+END
+KalenderTagPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/KalenderTagPanel.java
+END
+NeuerTermin.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/NeuerTermin.java
+END
+TerminErinnerungDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/TerminErinnerungDialog.form
+END
+NeuerTermin.form
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/NeuerTermin.form
+END
+TerminPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Kalender/TerminPanel.java
+END

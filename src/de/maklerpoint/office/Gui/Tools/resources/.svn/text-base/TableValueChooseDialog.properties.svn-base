@@ -1,0 +1,17 @@
+btnGleich.text==
+btnGleich.toolTipText=Ist gleich
+btnKleiner.toolTipText=Kleiner
+btnKleiner.text=<
+btnNichtgleich.toolTipText=Nicht gleich
+btnNichtgleich.text=!=
+btnBeginntmit.toolTipText=Beginnt mit
+btnBeginntmit.text=?=
+btnGroesserGlecih.toolTipText=Gr\u00f6\u00dfer gleich
+btnGroesserGlecih.text=>=
+btnGroesser.toolTipText=Gr\u00f6\u00dfer
+btnGroesser.text=>
+btnKleinergleich.toolTipText=Kleiner gleich
+btnKleinergleich.text=<=
+btnEnthaelt.toolTipText=Enth\u00e4lt
+btnEnthaelt.text=*=*
+Form.title=Operator

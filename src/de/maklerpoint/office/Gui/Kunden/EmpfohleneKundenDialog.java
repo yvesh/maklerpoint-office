@@ -1,0 +1,206 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*
+ * EmpfohleneKundenDialog.java
+ *
+ * Created on 06.07.2011, 11:36:46
+ */
+package de.maklerpoint.office.Gui.Kunden;
+
+import de.maklerpoint.office.Exception.ShowException;
+import de.maklerpoint.office.Gui.Exception.ExceptionDialogGui;
+import de.maklerpoint.office.Kunden.FirmenObj;
+import de.maklerpoint.office.Kunden.KundenObj;
+import de.maklerpoint.office.Logging.Log;
+import de.maklerpoint.office.Registry.KundenRegistry;
+import de.maklerpoint.office.System.Status;
+import de.maklerpoint.office.Table.AbstractStandardModel;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import javax.swing.ListSelectionModel;
+import javax.swing.event.TableModelEvent;
+import javax.swing.table.JTableHeader;
+
+/**
+ *
+ * @author Yves Hoppe <hoppe at maklerpoint.de>
+ */
+public class EmpfohleneKundenDialog extends javax.swing.JDialog {
+
+    private String kdnr = null;
+    private static final String[] Column = {"Hidden", "Kunden-Nr.", "Name", "Ort", "Status"};
+    
+    /** Creates new form EmpfohleneKundenDialog */
+    public EmpfohleneKundenDialog(java.awt.Frame parent, boolean modal, String kdnr) {
+        super(parent, modal);
+        this.kdnr = kdnr;
+        initComponents();
+        loadTable();
+    }
+    
+    private void loadTable(){
+        try {
+            Object[][] data = null;
+            Object[] knd = KundenRegistry.getGeworbeneKunden(kdnr);
+            
+            if(knd != null)
+            {
+                data = new Object[knd.length][5];
+                
+                for(int i = 0; i < knd.length; i++){
+                    
+                    data[i][0] = knd[i];
+                    
+                    try {
+                        KundenObj pk = (KundenObj) knd[i];
+                        
+                        data[i][1] = pk.getKundenNr();
+                        data[i][2] = pk.getVorname() + " " + pk.getNachname();
+                        data[i][3] = pk.getPlz() + " " + pk.getStadt();
+                        data[i][4] = Status.getName(pk.getStatus());
+                    } catch (Exception e) {
+                        FirmenObj fk = (FirmenObj) knd[i];
+                        data[i][1] = fk.getKundenNr();
+                        if(fk.getFirmenNameZusatz() == null)
+                            data[i][2] = fk.getFirmenName();
+                        else
+                            data[i][2] = fk.getFirmenName() + " - " + fk.getFirmenNameZusatz();
+                        data[i][3] = fk.getFirmenPLZ() + " " + fk.getFirmenStadt();
+                        data[i][4] = Status.getName(fk.getStatus());
+                    }
+                }
+            }
+            
+            setTable(data, Column);
+            
+        } catch (Exception e) {
+            Log.databaselogger.fatal("Die geworbenen Kunden konnten nicht geladen werden.", e);
+            ShowException.showException("Datenbankfehler: Die geworbenen Kunden konnten nicht geladen werden",
+                    ExceptionDialogGui.LEVEL_WARNING, e, "Schwerwiegend: Konnte Kunden nicht laden");
+        }
+    }
+    
+    private void setTable(Object[][] data, String[] columns) {
+        this.table_kunden.setModel(new AbstractStandardModel(data, columns));
+
+        table_kunden.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        table_kunden.setColumnSelectionAllowed(false);
+        table_kunden.setCellSelectionEnabled(false);
+        table_kunden.setRowSelectionAllowed(true);
+        table_kunden.setAutoCreateRowSorter(true);
+
+        table_kunden.setFillsViewportHeight(true);
+        table_kunden.removeColumn(table_kunden.getColumnModel().getColumn(0));
+
+        MouseListener popupListener = new TablePopupListener();
+        table_kunden.addMouseListener(popupListener);
+        table_kunden.setColumnControlVisible(true);
+
+        JTableHeader header = table_kunden.getTableHeader();
+        header.addMouseListener(popupListener);
+        header.validate();
+
+        table_kunden.packAll();
+
+        table_kunden.tableChanged(new TableModelEvent(table_kunden.getModel()));
+        table_kunden.revalidate();
+    }
+
+    /**
+     * Mousepopup
+     */
+    class TablePopupListener extends MouseAdapter {
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+            showPopup(e);
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+            showPopup(e);
+        }
+
+        private void showPopup(MouseEvent e) {
+            if (e.isPopupTrigger()) {
+//             tableNachrichtenPopupMenu.show(e.getComponent(), e.getX(), e.getY());
+            }
+        }
+    }
+    
+    /** This method is called from within the constructor to
+     * initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is
+     * always regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        scroll_protokolle = new javax.swing.JScrollPane();
+        table_kunden = new org.jdesktop.swingx.JXTable();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(de.maklerpoint.office.start.CRM.class).getContext().getResourceMap(EmpfohleneKundenDialog.class);
+        setTitle(resourceMap.getString("Form.title")); // NOI18N
+        setName("Form"); // NOI18N
+
+        scroll_protokolle.setName("scroll_protokolle"); // NOI18N
+
+        table_kunden.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Kunden-Nr.", "Name", "Adresse", "Status"
+            }
+        ));
+        table_kunden.setColumnControlVisible(true);
+        table_kunden.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        table_kunden.setName("table_kunden"); // NOI18N
+        scroll_protokolle.setViewportView(table_kunden);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(scroll_protokolle, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(scroll_protokolle, javax.swing.GroupLayout.DEFAULT_SIZE, 221, Short.MAX_VALUE)
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+
+            public void run() {
+                EmpfohleneKundenDialog dialog = new EmpfohleneKundenDialog(new javax.swing.JFrame(), true, null);
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+
+                    public void windowClosing(java.awt.event.WindowEvent e) {
+                        System.exit(0);
+                    }
+                });
+                dialog.setVisible(true);
+            }
+        });
+    }
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane scroll_protokolle;
+    private org.jdesktop.swingx.JXTable table_kunden;
+    // End of variables declaration//GEN-END:variables
+}

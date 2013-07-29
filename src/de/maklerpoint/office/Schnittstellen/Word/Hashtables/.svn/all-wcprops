@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/Hashtables
+END
+GenerateAnsprechpartnerHashtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/Hashtables/GenerateAnsprechpartnerHashtable.java
+END
+MandantenHashtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/Hashtables/MandantenHashtable.java
+END
+StoerfallHashtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/Hashtables/StoerfallHashtable.java
+END
+FirmenHashtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/Hashtables/FirmenHashtable.java
+END
+ProduktHashtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/Hashtables/ProduktHashtable.java
+END
+VertragHashtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/Hashtables/VertragHashtable.java
+END
+VersichererHashtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/Hashtables/VersichererHashtable.java
+END
+KundenHashtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/Hashtables/KundenHashtable.java
+END
+BenutzerHashtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/Hashtables/BenutzerHashtable.java
+END
+ZusatzadressenHashtable.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Schnittstellen/Word/Hashtables/ZusatzadressenHashtable.java
+END

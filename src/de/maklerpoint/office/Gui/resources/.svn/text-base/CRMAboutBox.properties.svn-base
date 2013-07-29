@@ -1,0 +1,14 @@
+title = \u00dcber MaklerPoint Office
+
+closeAboutBox.Action.text = &Close
+
+appDescLabel.text=<html>Weitere Informationen und Support zu MaklerPoint Office finden Sie unter http://www.maklerpoint.de. <br /><br />F\u00fcr die Kartendarstellung verwendet die Software Kartenmaterial von Open Street Map (http://www.openstreetmap.de), welches unter der CC-BY-SA 2.0 Lizenz ver\u00f6ffentlich ist. <br /><br>Wir danken:<br />-Acyrance Versicherungsmakler (www.acyrance.de) f\u00fcr ihr Know-How.<br />-Der Apache Software Foundation.<br />-Vielen anderen Open Source Entwicklern, ohne die MaklerPoint Office <br /> in der Form nicht m\u00f6glich gewesen w\u00e4re. </html>
+
+versionLabel.text=Produkt Version:
+
+vendorLabel.text=Hersteller:
+
+homepageLabel.text=Webseite:
+#NOI18N
+imageLabel.icon=splash.png
+closeButton.text=Schlie\u00dfen

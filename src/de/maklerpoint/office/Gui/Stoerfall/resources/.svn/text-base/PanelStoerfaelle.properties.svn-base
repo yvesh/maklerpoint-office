@@ -1,0 +1,43 @@
+label_tablestatustext.text=Keine Datens\u00e4tze
+btnFieldsearch.toolTipText=Schnellsuche
+btnOperator.toolTipText=Enth\u00e4lt
+btnOperator.text=*=*
+jLabel3.text=\ \ \ Feld
+jLabel2.text=Detailsuche
+btnSchnellSuche.toolTipText=Schnellsuche
+jLabel1.text=\ \ Schnellsuche
+btnRefresh.toolTipText=Tabelle aktualisieren
+btnTableSettings.toolTipText=Tabellen Einstellungen
+btnStatistik.text=Statistik
+btnDokumente.toolTipText=Dokumente des St\u00f6rfalls
+btnDokumente.text=Dokumente
+label_activestoerfall.text=Kein St\u00f6rfall ausgew\u00e4hlt
+eigeneMenuItem.text=Eigene St\u00f6f\u00e4lle
+deleteddbMenuItem.text=Gel\u00f6schte St\u00f6rf\u00e4lle
+archivedbMenuItem.text=Archivierte St\u00f6rf\u00e4lle
+aktivedbMenuItem.text=Offene St\u00f6rf\u00e4lle
+alledbMenuItem.toolTipText=Zeigt alle St\u00f6rf\u00e4lle (auch archivierte, gel\u00f6schte etc.)
+alledbMenuItem.text=Alle
+alleMenuItem.text=Alle St\u00f6rf\u00e4lle
+btnNeu.toolTipText=Neuen St\u00f6rfall erstellen
+btnNeu.text=Neu
+#NOI18N
+btnNeu.icon=/de/acyrance/CRM/Gui/resources/add.png
+#NOI18N
+btnDokumente.icon=/de/acyrance/CRM/Gui/resources/icon_clean/computer.png
+#NOI18N
+btnStatistik.icon=/de/acyrance/CRM/Gui/resources/chart_bar.png
+#NOI18N
+btnTableSettings.icon=/de/acyrance/CRM/Gui/resources/icon_clean/table-join-column.png
+#NOI18N
+btnRefresh.icon=/de/acyrance/CRM/Gui/resources/icon_clean/table-refresh.png
+#NOI18N
+btnSchnellSuche.icon=/de/acyrance/CRM/Gui/resources/right.png
+#NOI18N
+jLabel2.icon=/de/acyrance/CRM/Gui/resources/magnifier.png
+#NOI18N
+btnFieldsearch.icon=/de/acyrance/CRM/Gui/resources/right.png
+btnErledigt.toolTipText=Ausgew\u00e4hlte St\u00f6rf\u00e4lle als erledigt markieren
+btnErledigt.text=Erledigt
+#NOI18N
+btnErledigt.icon=/de/acyrance/CRM/Gui/resources/accept.png

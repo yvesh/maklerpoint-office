@@ -1,0 +1,234 @@
+Config.getConfigBoolean("exportOpendocument", true)
+Config.get("exportSeperator", ",")
+Config.getConfigBoolean("exportOpendocument", true)
+
+prefs = Preferences.userRoot().node(Config.class.getName());
+
+Config.getConfigInt("backupType", BackupFiletypes.ZIP);
+
+Preferences prefs = Preferences.userRoot().node(panelKalenderHolder.class.getName());
+        boolean getPublicTermine = prefs.getBoolean("showPublic", true);
+
+
+Preferences.userRoot().node(TipOfTheDay.class.getName());
+prefs.getBoolean("showTipoftheday", true);
+
+Config.getConfigBoolean("eigenekundenGeburtstage", true)
+
+  boolean getPublicTermine = prefs.getBoolean("showPublic", true);
+
+Benutzer (wird warscheinlich nicht veröffentlicht !!):
+String vertragsPath = pathName + File.separatorChar + Config.get("vertragOrdnerBenutzer", "vertraege");
+String sonstigesPath = pathName + File.separatorChar + Config.get("sonstigesOrdnerBenutzer", "sonstiges");
+String abrechnungsPath = pathName + File.separatorChar + Config.get("abrechnungOrdnerBenutzer", "abrechnungen");
+String historyPath = pathName + File.separatorChar + Config.get("historyOrdnerBenutzer", "history");
+String scansPath = pathName + File.separatorChar + Config.get("scanOrdnerBenutzer", "scan");
+prefs.get("vertragOrdner", "vertraege");
+prefs.get("rechnungOrdner", "rechnungen");
+prefs.get("versicherungOrdner", "versicherung");
+prefs.get("scanOrdner", "scan");
+prefs.get("historyOrdner", "history");
+prefs.get("sonstigesOrdner", "sonstiges");
+
+Config.getConfigValue("filesystemPath", "filesystem");
+
+#Initial Values
+
+Config.getConfigInt("initialSchadennr", 50001);
+Config.getConfigInt("initialKundennr", 11001);
+Config.getConfigInt("initialStoerfaellenr", 60001);
+
+#Idle Pooling:
+Config.getConfigInt("timerPolling", 30);
+Config.getConfigInt("timerAway", 900)
+Config.getConfigInt("timerIdle", 1800);
+
+# Nach timerIdle Programm beenden
+Config.getConfigBoolean("autoClose", true)
+
+#Messages Poling (in seconds)
+Config.getConfigInt("messagesPolling", 300);
+
+#Confirmations - bestätigungen
+
+if(Config.getConfigBoolean("closeConfirm", true))
+if(Config.getConfigBoolean("deletearchiveConfirm", true))
+
+# Search
+(Config.getConfigBoolean("searchOntype", false)
+
+#Reporting
+
+Config.getConfigInt("reportingFormat", KundenVertragsspiegelReport.PDF)
+
+#CRMView
+int mpos = Config.getConfigInt("contentposMydoggy", 0);
+        
+if(mpos == 0)
+    contentManagerUI.setTabPlacement(TabbedContentManagerUI.TabPlacement.BOTTOM);
+else if(mpos == 1)
+    contentManagerUI.setTabPlacement(TabbedContentManagerUI.TabPlacement.TOP);
+else if (mpos == 2)
+    contentManagerUI.setTabPlacement(TabbedContentManagerUI.TabPlacement.LEFT);
+else if (mpos == 3)
+    contentManagerUI.setTabPlacement(TabbedContentManagerUI.TabPlacement.RIGHT);
+
+#Sidebar (CRMView) ToolWindow
+
+Config.getConfigBoolean("ueberblickToolwindow", true)
+Config.getConfigBoolean("schnellzugriffToolwindow", true)
+if(Config.getConfigBoolean("adressbuchToolwindow", true)) 
+if(Config.getConfigBoolean("hilfeToolwindow", true)) 
+
+karte wird benötigt!
+
+# Sidebar (CRMView) Toolwindow Position:
+
+getToolWindowPos(Config.getInt("debugPosToolwindow", 0)
+getToolWindowPos(Config.getInt("ueberblickPosToolwindow", 0))
+getToolWindowPos(Config.getInt("schnellzugriffPosToolwindow", 0))
+getToolWindowPos(Config.getInt("adressbuchPosToolwindow", 0))
+getToolWindowPos(Config.getInt("kartePosToolwindow", 0))
+getToolWindowPos(Config.getInt("hilfePosToolwindow", 0))
+
+private ToolWindowAnchor getToolWindowPos(int pos) {
+    if(pos == 0)
+        return ToolWindowAnchor.LEFT;
+    else if(pos == 1)
+        return ToolWindowAnchor.RIGHT;
+    else if(pos == 2)
+        return ToolWindowAnchor.TOP;
+    else if(pos == 3)
+        return ToolWindowAnchor.BOTTOM;
+    else
+        return ToolWindowAnchor.LEFT; // Fallback
+}
+
+
+
+#toString 
+
+int sett = Config.getInt("kundenToString", 0);
+
+if(sett == 0)
+    return this._vorname + " " + this._nachname + " (" + this._kundenNr + ")";
+else if(sett == 1)
+    return this._nachname + " " + this._vorname + " (" + this._kundenNr + ")";
+else if (sett == 2)
+    return this._vorname + " " + this._nachname;
+else if (sett == 3)
+    return this._kundenNr;
+else if (sett == 4)
+    return this._kundenNr + " " + this._nachname;
+else 
+    return this._vorname + " " + this._nachname + " (" + this._kundenNr + ")"; // Fallback
+
+
+int sett = Config.getInt("firmenToString", 0);
+
+if (sett == 0) {
+    return this.getFirmenName() + " (" + this.getKundenNr() + ")";
+} else if (sett == 1) {
+    if (this.getFirmenNameZusatz() != null) {
+        return this.getFirmenName() + " - " + this.getFirmenNameZusatz()
+                + " (" + this.getKundenNr() + ")";
+    } else {
+        return this.getFirmenName() + " (" + this.getKundenNr() + ")";
+    }
+} else if (sett == 2) {
+    return this.getFirmenName();
+} else if (sett == 3) {
+    return this.getKundenNr();            
+} else if (sett == 4) {
+    return this._kundenNr + " " + this._firmenName;
+} else {
+    return this.getFirmenName() + " (" + this.getKundenNr() + ")"; // Fallback
+}   
+
+int sett = Config.getInt("benutzerToString", 0);  
+        
+if(sett == 0) {
+    return this.getVorname() + " " + this.getNachname() + " (" + this.getKennung() + ")";
+} else if (sett == 1) {
+    return this.getNachname() + " " + this.getVorname() + " (" + this.getKennung() + ")";
+} else if (sett == 2) {
+    return this.getVorname() + " " + this.getNachname();
+} else if (sett == 3) {
+    return this.getKennung();
+} else if (sett == 4) {
+    return _kennung + " " + _nachname;
+} else {
+    return this.getVorname() + " " + this.getNachname() + " (" + this.getKennung() + ")";
+}
+
+int sett = Config.getInt("versichererToString", 0);
+        
+if (sett == 0) {
+    return this._name + " (" + this._vuNummer + ")";
+} else if (sett == 1) {
+    return this._name;
+} else if (sett == 2) {
+    return this._vuNummer;
+} else {
+    return this._name + " (" + this._vuNummer + ")"; // Fallback
+}
+
+ if (this._versichererId == -1) {
+    return this._bezeichnung;
+}
+
+int sett = Config.getInt("produktToString", 0);
+
+VersichererObj vers = VersicherungsRegistry.getVersicher(this._versichererId);
+
+if (sett == 0) {
+    return this._bezeichnung; 
+} else if (sett == 1) {                       
+    return this._bezeichnung + " (" + vers.getName() + ")";        
+} else {
+    return this._bezeichnung;
+}
+
+if(this._produktId == -1)
+    return this._id + "_" + this._kundenKennung;
+
+ProduktObj prod = VersicherungsRegistry.getProdukt(this._produktId);
+
+if(this._policennr == null) {
+    return prod.getBezeichnung() + " Vertrag ("  + this._kundenKennung + ")";
+}
+
+int sett = Config.getInt("produktToString", 0);    
+
+// TODO Konfigurierbar
+
+if(sett == 0) {
+    return this._policennr + " (" + this.getKundenKennung() + ")";
+} else if (sett == 1) {
+    return this._policennr + " [" + prod.getBezeichnung() + "]";
+} else if (sett == 2) {
+    return this._policennr + " [" + prod.getBezeichnung() + "] (" + this.getKundenKennung() + ")";            
+} else if (sett == 3) {
+    return this._policennr;            
+} else {
+    return this._policennr + " (" + this.getKundenKennung() + ")";
+}
+
+
+
+
+#E-Mail (--INTEGRIERT--)
+Config.get("emailHost", "")
+Config.getConfigInt("emailPort", 25)
+Config.getConfigBoolean("mailTLS", false)
+Config.getConfigBoolean("mailSSL", false)
+Config.get("mailUsername", "")
+Config.get("mailPassword", "")
+Config.get("mailSendermail", ""), 
+Config.get("mailSender", "")
+
+#Google (--INTEGRIERT--)
+String username = Config.get("userGoogle", null);
+String password = Config.get("passGoogle", null);
+Config.get("tokenGoogle", null) // Delete bei Änderung
+boolean usehttps = Config.getConfigBoolean("httpsGoogle", true);

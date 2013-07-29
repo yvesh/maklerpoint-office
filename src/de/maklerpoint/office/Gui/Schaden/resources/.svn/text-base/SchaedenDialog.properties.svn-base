@@ -1,0 +1,58 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+btnCancel.text=Abbruch
+btnSave.text=Speichern
+panel_basis.TabConstraints.tabTitle=Basis Daten
+jLabel1.text=Vertrag:
+jLabel2.text=Kunde:
+jLabel19.text=Interne Schadens-Nr.
+jLabel3.text=Bearbeiter:
+panel_schaden.TabConstraints.tabTitle=Schadenanzeige
+jLabel17.text=Schadensh\u00f6he:
+panel_sonstiges.TabConstraints.tabTitle=Sonstiges
+jScrollPane1.viewportBorder.title=Intern
+jLabel12.text=Benutzerdefiniert 1:
+jLabel13.text=Benutzerdefiniert 2:
+jLabel14.text=Benutzerdefiniert 3:
+btnMaxCustom1.toolTipText=Text bearbeiten (Zoom)
+btnMaxCustom2.toolTipText=Text bearbeiten (Zoom)
+btnMaxCustom3.toolTipText=Text bearbeiten (Zoom)
+btnMaxCustom4.toolTipText=Text bearbeiten (Zoom)
+jLabel15.text=Benutzerdefiniert 4:
+jLabel16.text=Benutzerdefiniert 5:
+btnMaxCustom5.toolTipText=Text bearbeiten (Zoom)
+btnMaxComments.toolTipText=Text bearbeiten (Zoom)
+jLabel4.text=Kategorie:
+jLabel23.text=Schadensort:
+jScrollPane2.viewportBorder.title=Schadensumfang
+btnMaxComments1.toolTipText=Text bearbeiten (Zoom)
+jScrollPane3.viewportBorder.title=Schadenshergang
+btnMaxComments2.toolTipText=Text bearbeiten (Zoom)
+jLabel18.text=Schaden Datum / Uhrzeit:
+panel_vu.TabConstraints.tabTitle=Weiterleitung VU
+jLabel20.text=Weiterleitung Datum / Uhrzeit:
+jLabel5.text=Art der Meldung:
+jLabel6.text=Gemeldet von:
+jLabel7.text=Art der Meldung:
+jLabel24.text=Schadens-Nr (VU):
+jLabel25.text=Status vom:
+jLabel26.text=Aktueller Status:
+jLabel27.text=Risiko:
+Form.title=Neuer Schadenfall
+#NOI18N
+btnCancel.icon=/de/acyrance/CRM/Gui/resources/icon_clean/cross-octagon.png
+#NOI18N
+btnSave.icon=/de/acyrance/CRM/Gui/resources/icon_clean/disk-return.png
+check_vnmelder.text=VN
+check_wiedervorlage.text=Wiedervorlage:
+date_wiedervorlage.dateFormatString=dd.MM.yyyy
+date_schadenTime.dateFormatString=dd.MM.yyyy HH:mm
+check_polizei.text=Gemeldet bei der Polizei
+date_vuWeiterleitungTime.dateFormatString=dd.MM.yyyy HH:mm
+check_vuGutachten.text=Gutachten notwendig
+date_vuStatusDatum.dateFormatString=dd.MM.yyyy HH:mm
+jScrollPane4.viewportBorder.title=Kommentare
+btnMaxComments3.toolTipText=Text bearbeiten (Zoom)
+#NOI18N
+btnMaxCustom1.icon=/de/acyrance/CRM/Gui/resources/lupe.gif

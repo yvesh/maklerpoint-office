@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem
+END
+FilesystemBackup.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem/FilesystemBackup.java
+END
+FilesystemVersicherer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem/FilesystemVersicherer.java
+END
+FilesystemSchaeden.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem/FilesystemSchaeden.java
+END
+Filesystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem/Filesystem.java
+END
+FilesystemStoerfaelle.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem/FilesystemStoerfaelle.java
+END
+InitializeFilesystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem/InitializeFilesystem.java
+END
+FilesystemProdukte.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem/FilesystemProdukte.java
+END
+FilesystemBenutzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem/FilesystemBenutzer.java
+END
+FilesystemVertraege.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem/FilesystemVertraege.java
+END
+FilesystemMediaScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem/FilesystemMediaScanner.java
+END
+FilesystemKunden.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Filesystem/FilesystemKunden.java
+END

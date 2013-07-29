@@ -1,0 +1,131 @@
+<!-- Privatkunden XML Schema Definition - www.maklerpoint.de  -->
+
+<!ELEMENT adresseZusatz ( #PCDATA ) >
+
+<!ELEMENT adresseZusatz2 ( #PCDATA ) >
+
+<!ELEMENT anrede ( #PCDATA ) >
+
+<!ELEMENT anteilBuerotaetigkeit ( #PCDATA ) >
+
+<!ELEMENT arbeitgeber ( #PCDATA ) >
+
+<!ELEMENT beamter ( #PCDATA ) >
+
+<!ELEMENT beginnRente ( #PCDATA ) >
+
+<!ELEMENT beruf ( #PCDATA ) >
+
+<!ELEMENT berufsTyp ( #PCDATA ) >
+
+<!ELEMENT betreuerKennung ( #PCDATA ) >
+
+<!ELEMENT bundesland ( #PCDATA ) >
+
+<!ELEMENT communication1 ( #PCDATA ) >
+
+<!ELEMENT communication1Type ( #PCDATA ) >
+
+<!ELEMENT communication2 ( #PCDATA ) >
+
+<!ELEMENT communication2Type ( #PCDATA ) >
+
+<!ELEMENT communication3 ( #PCDATA ) >
+
+<!ELEMENT communication3Type ( #PCDATA ) >
+
+<!ELEMENT communication4 ( #PCDATA ) >
+
+<!ELEMENT communication4Type ( #PCDATA ) >
+
+<!ELEMENT communication5 ( #PCDATA ) >
+
+<!ELEMENT communication5Type ( #PCDATA ) >
+
+<!ELEMENT communication6 ( #PCDATA ) >
+
+<!ELEMENT communication6Type ( #PCDATA ) >
+
+<!ELEMENT creatorId ( #PCDATA ) >
+
+<!ELEMENT custom1 ( #PCDATA ) >
+
+<!ELEMENT custom2 ( #PCDATA ) >
+
+<!ELEMENT custom3 ( #PCDATA ) >
+
+<!ELEMENT custom4 ( #PCDATA ) >
+
+<!ELEMENT custom5 ( #PCDATA ) >
+
+<!ELEMENT defaultKonto ( #PCDATA ) >
+
+<!ELEMENT ehedatum ( #PCDATA ) >
+
+<!ELEMENT ehepartnerKennung ( #PCDATA ) >
+
+<!ELEMENT einkommenBrutto ( #PCDATA ) >
+
+<!ELEMENT einkommenNetto ( #PCDATA ) >
+
+<!ELEMENT erstelltDatum ( #PCDATA ) >
+
+<!ELEMENT familienstand ( #PCDATA ) >
+
+<!ELEMENT geburtsdatum ( #PCDATA ) >
+
+<!ELEMENT geburtsname ( #PCDATA ) >
+
+<!ELEMENT kirchensteuer ( #PCDATA ) >
+
+<!ELEMENT kommentare ( #PCDATA ) >
+
+<!ELEMENT kunde ( betreuerKennung, creatorId, mandantenId, kundenNr, anrede, titel, arbeitgeber, vorname, vorname2, vornameWeitere, nachname, adresseZusatz, adresseZusatz2, strasse, plz, ort, bundesland, land, typ, familienstand, ehepartnerKennung, geburtsdatum, nationalitaet, beruf, berufsTyp, anteilBuerotaetigkeit, beginnRente, beamter, oeffentlicherDienst, communication1, communication2, communication3, communication4, communication5, communication6, communication1Type, communication2Type, communication3Type, communication4Type, communication5Type, communication6Type, einkommenBrutto, einkommenNetto, steuertabelle, steuerklasse, kirchensteuer, religion, rolleImHaushalt, weiterePersonenHaushalt, weiterePersonenInfo, werberKennung, defaultKonto, kommentare, custom1, custom2, custom3, custom4, custom5, geburtsname, ehedatum, erstelltDatum, modifiziertDatum, status ) >
+<!ATTLIST kunde id NMTOKEN #REQUIRED >
+
+<!ELEMENT kundenNr ( #PCDATA ) >
+
+<!ELEMENT land ( #PCDATA ) >
+
+<!ELEMENT mandantenId ( #PCDATA ) >
+
+<!ELEMENT modifiziertDatum ( #PCDATA ) >
+
+<!ELEMENT nachname ( #PCDATA ) >
+
+<!ELEMENT nationalitaet ( #PCDATA ) >
+
+<!ELEMENT oeffentlicherDienst ( #PCDATA ) >
+
+<!ELEMENT ort ( #PCDATA ) >
+
+<!ELEMENT plz ( #PCDATA ) >
+
+<!ELEMENT religion ( #PCDATA ) >
+
+<!ELEMENT rolleImHaushalt ( #PCDATA ) >
+
+<!ELEMENT status ( #PCDATA ) >
+
+<!ELEMENT steuerklasse ( #PCDATA ) >
+
+<!ELEMENT steuertabelle ( #PCDATA ) >
+
+<!ELEMENT strasse ( #PCDATA ) >
+
+<!ELEMENT titel ( #PCDATA ) >
+
+<!ELEMENT typ ( #PCDATA ) >
+
+<!ELEMENT vorname ( #PCDATA ) >
+
+<!ELEMENT vorname2 ( #PCDATA ) >
+
+<!ELEMENT vornameWeitere ( #PCDATA ) >
+
+<!ELEMENT weiterePersonenHaushalt ( #PCDATA ) >
+
+<!ELEMENT weiterePersonenInfo ( #PCDATA ) >
+
+<!ELEMENT werberKennung ( #PCDATA ) >
+

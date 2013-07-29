@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/maklerpoint/!svn/ver/2/office/platform/lib/javamail
+END
+imap.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/maklerpoint/!svn/ver/2/office/platform/lib/javamail/imap.jar
+END
+mailapi.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/maklerpoint/!svn/ver/2/office/platform/lib/javamail/mailapi.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/maklerpoint/!svn/ver/2/office/platform/lib/javamail/activation.jar
+END
+smtp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/maklerpoint/!svn/ver/2/office/platform/lib/javamail/smtp.jar
+END
+mail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/maklerpoint/!svn/ver/2/office/platform/lib/javamail/mail.jar
+END
+dsn.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/maklerpoint/!svn/ver/2/office/platform/lib/javamail/dsn.jar
+END
+pop3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/maklerpoint/!svn/ver/2/office/platform/lib/javamail/pop3.jar
+END

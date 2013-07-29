@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/maklerpoint/!svn/ver/2/office/platform/properties
+END
+quartz.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/maklerpoint/!svn/ver/2/office/platform/properties/quartz.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/maklerpoint/!svn/ver/2/office/platform/properties/log4j.properties
+END
+JacobVersion.properties
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/maklerpoint/!svn/ver/2/office/platform/properties/JacobVersion.properties
+END

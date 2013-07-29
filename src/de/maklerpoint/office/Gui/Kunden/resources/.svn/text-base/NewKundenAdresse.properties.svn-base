@@ -1,0 +1,24 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+Form.title=Neue Kundenadresse
+btnCancel.text=Abbruch
+jLabel11.text=Kommentar:
+btnMaxTextKommentar.toolTipText=Text bearbeiten (Zoom)
+btnMaxCustom3.toolTipText=Text bearbeiten (Zoom)
+jLabel7.text=Benutzerdefiniert 3:
+btnMaxCustom2.toolTipText=Text bearbeiten (Zoom)
+jLabel6.text=Benutzerdefiniert 2:
+btnMaxCustom1.toolTipText=Text bearbeiten (Zoom)
+jLabel5.text=Benutzerdefiniert 1:
+panel_sonstiges.TabConstraints.tabTitle=Sonstiges
+jLabel13.text=Land:
+jLabel12.text=Bundesland:
+jLabel27.text=Plz / Ort:
+jLabel26.text=Strasse:
+panel_anschrift.TabConstraints.tabTitle=Anschrift
+btnSave.text=Speichern
+jLabel28.text=Name:
+jLabel29.text=Zusatz:
+#NOI18N
+btnMaxCustom1.icon=/de/acyrance/CRM/Gui/resources/lupe.gif

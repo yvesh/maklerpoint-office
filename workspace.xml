@@ -1,0 +1,319 @@
+<?xml version="1.0" standalone="yes"?>
+
+<mydoggy version="1.5.0" contentManagerEnabled="true">
+    <toolWindows>
+        <sharedWindows></sharedWindows>
+        <toolWindow id="&#220;berblick" available="true" visible="false" active="false" autoHide="false" anchor="LEFT" anchorIndex="4" type="DOCKED" aggregateMode="false" maximized="false" index="1" flashing="false" lockedOnAnchor="false" hideOnZeroTabs="true">
+            <descriptors>
+                <docked animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" dockLength="240" minimumDockLength="100" popupMenuEnabled="true"/>
+                <sliding animating="true" autoHide="true" enabled="false" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" transparentMode="true" transparentDelay="0" transparentRatio="0.8"/>
+                <floating animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" modal="false" transparentMode="true" transparentDelay="1000" transparentRatio="0.2" addToTaskBar="false" alwaysOnTop="true" osDecorated="false" resizable="true">
+                    <location x="150" y="200"/>
+                    <size width="220" height="200"/>
+                </floating>
+                <floatingLive animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" modal="false" transparentMode="true" transparentDelay="1000" transparentRatio="0.2" addToTaskBar="false" alwaysOnTop="true" osDecorated="false" resizable="true">
+                    <location x="669" y="266"/>
+                    <size width="250" height="595"/>
+                </floatingLive>
+                <anchor visible="true" title="&#220;berblick" previewEnabled="true" previewDelay="1000" previewTransparentRatio="0.65">
+                    <lockingAnchors></lockingAnchors>
+                </anchor>
+            </descriptors>
+        </toolWindow>
+        <toolWindow id="Schnellzugriff" available="true" visible="true" active="false" autoHide="false" anchor="LEFT" anchorIndex="3" type="DOCKED" aggregateMode="false" maximized="false" index="2" flashing="false" lockedOnAnchor="false" hideOnZeroTabs="true">
+            <descriptors>
+                <docked animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" dockLength="231" minimumDockLength="100" popupMenuEnabled="true"/>
+                <sliding animating="true" autoHide="true" enabled="false" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" transparentMode="true" transparentDelay="0" transparentRatio="0.8"/>
+                <floating animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" modal="false" transparentMode="true" transparentDelay="1000" transparentRatio="0.2" addToTaskBar="false" alwaysOnTop="true" osDecorated="false" resizable="true">
+                    <location x="320" y="219"/>
+                    <size width="220" height="280"/>
+                </floating>
+                <floatingLive animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" modal="false" transparentMode="true" transparentDelay="1000" transparentRatio="0.2" addToTaskBar="false" alwaysOnTop="true" osDecorated="false" resizable="true">
+                    <location x="23" y="58"/>
+                    <size width="1657" height="893"/>
+                </floatingLive>
+                <anchor visible="true" title="Schnellzugriff" previewEnabled="true" previewDelay="1000" previewTransparentRatio="0.65">
+                    <lockingAnchors></lockingAnchors>
+                </anchor>
+            </descriptors>
+        </toolWindow>
+        <toolWindow id="Adressbuch" available="true" visible="false" active="false" autoHide="false" anchor="LEFT" anchorIndex="2" type="DOCKED" aggregateMode="false" maximized="false" index="3" flashing="false" lockedOnAnchor="false" hideOnZeroTabs="true">
+            <descriptors>
+                <docked animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" dockLength="285" minimumDockLength="100" popupMenuEnabled="true"/>
+                <sliding animating="true" autoHide="true" enabled="false" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" transparentMode="true" transparentDelay="0" transparentRatio="0.8"/>
+                <floating animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" modal="false" transparentMode="true" transparentDelay="1000" transparentRatio="0.2" addToTaskBar="false" alwaysOnTop="true" osDecorated="false" resizable="true">
+                    <location x="150" y="200"/>
+                    <size width="220" height="200"/>
+                </floating>
+                <floatingLive animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" transparentMode="true" transparentDelay="1000" transparentRatio="0.5" resizable="true"/>
+                <anchor visible="true" title="Adressbuch" previewEnabled="true" previewDelay="1000" previewTransparentRatio="0.65">
+                    <lockingAnchors></lockingAnchors>
+                </anchor>
+            </descriptors>
+        </toolWindow>
+        <toolWindow id="Karte (Suche)" available="true" visible="false" active="false" autoHide="false" anchor="LEFT" anchorIndex="1" type="DOCKED" aggregateMode="false" maximized="false" index="4" flashing="false" lockedOnAnchor="false" hideOnZeroTabs="true">
+            <descriptors>
+                <docked animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" dockLength="227" minimumDockLength="100" popupMenuEnabled="true"/>
+                <sliding animating="true" autoHide="true" enabled="false" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" transparentMode="true" transparentDelay="0" transparentRatio="0.8"/>
+                <floating animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" modal="false" transparentMode="true" transparentDelay="1000" transparentRatio="0.2" addToTaskBar="false" alwaysOnTop="true" osDecorated="false" resizable="true">
+                    <location x="150" y="200"/>
+                    <size width="220" height="200"/>
+                </floating>
+                <floatingLive animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" transparentMode="true" transparentDelay="1000" transparentRatio="0.5" resizable="true"/>
+                <anchor visible="true" title="Karte (Suche)" previewEnabled="true" previewDelay="1000" previewTransparentRatio="0.65">
+                    <lockingAnchors></lockingAnchors>
+                </anchor>
+            </descriptors>
+        </toolWindow>
+        <toolWindow id="Hilfe" available="true" visible="false" active="false" autoHide="false" anchor="LEFT" anchorIndex="0" type="DOCKED" aggregateMode="false" maximized="false" index="5" flashing="false" lockedOnAnchor="false" hideOnZeroTabs="true">
+            <descriptors>
+                <docked animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" dockLength="250" minimumDockLength="100" popupMenuEnabled="true"/>
+                <sliding animating="true" autoHide="true" enabled="false" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" transparentMode="true" transparentDelay="0" transparentRatio="0.8"/>
+                <floating animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" modal="false" transparentMode="true" transparentDelay="1000" transparentRatio="0.2" addToTaskBar="false" alwaysOnTop="true" osDecorated="false" resizable="true">
+                    <location x="150" y="200"/>
+                    <size width="220" height="200"/>
+                </floating>
+                <floatingLive animating="true" autoHide="false" enabled="true" hideRepresentativeButtonOnVisible="false" idVisibleOnTitleBar="true" titleBarButtonsVisible="true" titleBarVisible="true" transparentMode="true" transparentDelay="1000" transparentRatio="0.5" resizable="true"/>
+                <anchor visible="true" title="Hilfe" previewEnabled="true" previewDelay="1000" previewTransparentRatio="0.65">
+                    <lockingAnchors></lockingAnchors>
+                </anchor>
+            </descriptors>
+        </toolWindow>
+    </toolWindows>
+    <toolWindowManagerDescriptor numberingEnabled="true" previewEnabled="true" showUnavailableTools="false">
+        <pushAway pushAwayMode="VERTICAL">
+            <mode type="MOST_RECENT">
+                <anchor type="TOP"/>
+                <anchor type="RIGHT"/>
+                <anchor type="BOTTOM"/>
+                <anchor type="LEFT"/>
+            </mode>
+        </pushAway>
+    </toolWindowManagerDescriptor>
+    <contentManagerUI>
+        <TabbedContentManagerUI closeable="true" detachable="true" minimizable="true" maximizable="true" popupMenuEnabled="true" showAlwaysTab="true" tabLayout="SCROLL" tabPlacement="BOTTOM"/>
+    </contentManagerUI>
+    <contentManager>
+        <sharedWindows></sharedWindows>
+        <contents>
+            <content id="start" detached="false" enabled="true" selected="true" maximized="false" minimized="false" flashing="false" closeable="true" detachable="true" minimizable="true" maximizable="true" transparentMode="true" transparentDelay="0" transparentRatio="0.7" addToTaskBarWhenDetached="false" alwaysOnTop="true">
+                <detachedBounds x="282" y="281" width="1392" height="682"/>
+            </content>
+        </contents>
+    </contentManager>
+    <toolWindowBars>
+        <toolWindowBar anchor="LEFT" dividerSize="3" aggregateMode="false" length="23" visible="true" toolsVisible="false">
+            <layout>
+                <![CDATA[
+<java version="1.6.0_26" class="java.beans.XMLDecoder"> 
+ <object class="org.noos.xing.mydoggy.plaf.ui.cmp.multisplit.DockableLeaf"> 
+  <void property="bounds"> 
+   <object class="java.awt.Rectangle"> 
+    <int>0</int> 
+    <int>0</int> 
+    <int>231</int> 
+    <int>943</int> 
+   </object> 
+  </void> 
+  <void property="dockables"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <string>Schnellzugriff</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="name"> 
+   <string>1</string> 
+  </void> 
+  <void property="weight"> 
+   <double>1.0</double> 
+  </void> 
+ </object> 
+</java> 
+]]>
+            </layout>
+            <workspace>
+                <![CDATA[PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJ5ZXMiPz4KCjxteWRvZ2d5IHZlcnNpb249
+IjEuNS4wIiBjb250ZW50TWFuYWdlckVuYWJsZWQ9InRydWUiPgogICAgPHRvb2xXaW5kb3dzPgog
+ICAgICAgIDxzaGFyZWRXaW5kb3dzPjwvc2hhcmVkV2luZG93cz4KICAgICAgICA8dG9vbFdpbmRv
+dyBpZD0iJiMyMjA7YmVyYmxpY2siIGF2YWlsYWJsZT0idHJ1ZSIgdmlzaWJsZT0iZmFsc2UiIGFj
+dGl2ZT0iZmFsc2UiIGF1dG9IaWRlPSJmYWxzZSIgYW5jaG9yPSJMRUZUIiBhbmNob3JJbmRleD0i
+NCIgdHlwZT0iRE9DS0VEIiBhZ2dyZWdhdGVNb2RlPSJmYWxzZSIgbWF4aW1pemVkPSJmYWxzZSIg
+aW5kZXg9Ii0xIiBmbGFzaGluZz0iZmFsc2UiIGxvY2tlZE9uQW5jaG9yPSJmYWxzZSIgaGlkZU9u
+WmVyb1RhYnM9InRydWUiPgogICAgICAgICAgICA8ZGVzY3JpcHRvcnM+CiAgICAgICAgICAgICAg
+ICA8ZG9ja2VkIGFuaW1hdGluZz0idHJ1ZSIgYXV0b0hpZGU9ImZhbHNlIiBlbmFibGVkPSJ0cnVl
+IiBoaWRlUmVwcmVzZW50YXRpdmVCdXR0b25PblZpc2libGU9ImZhbHNlIiBpZFZpc2libGVPblRp
+dGxlQmFyPSJ0cnVlIiB0aXRsZUJhckJ1dHRvbnNWaXNpYmxlPSJ0cnVlIiB0aXRsZUJhclZpc2li
+bGU9InRydWUiIGRvY2tMZW5ndGg9IjI1MCIgbWluaW11bURvY2tMZW5ndGg9IjEwMCIgcG9wdXBN
+ZW51RW5hYmxlZD0idHJ1ZSIvPgogICAgICAgICAgICAgICAgPHNsaWRpbmcgYW5pbWF0aW5nPSJ0
+cnVlIiBhdXRvSGlkZT0idHJ1ZSIgZW5hYmxlZD0iZmFsc2UiIGhpZGVSZXByZXNlbnRhdGl2ZUJ1
+dHRvbk9uVmlzaWJsZT0iZmFsc2UiIGlkVmlzaWJsZU9uVGl0bGVCYXI9InRydWUiIHRpdGxlQmFy
+QnV0dG9uc1Zpc2libGU9InRydWUiIHRpdGxlQmFyVmlzaWJsZT0idHJ1ZSIgdHJhbnNwYXJlbnRN
+b2RlPSJ0cnVlIiB0cmFuc3BhcmVudERlbGF5PSIwIiB0cmFuc3BhcmVudFJhdGlvPSIwLjgiLz4K
+ICAgICAgICAgICAgICAgIDxmbG9hdGluZyBhbmltYXRpbmc9InRydWUiIGF1dG9IaWRlPSJmYWxz
+ZSIgZW5hYmxlZD0idHJ1ZSIgaGlkZVJlcHJlc2VudGF0aXZlQnV0dG9uT25WaXNpYmxlPSJmYWxz
+ZSIgaWRWaXNpYmxlT25UaXRsZUJhcj0idHJ1ZSIgdGl0bGVCYXJCdXR0b25zVmlzaWJsZT0idHJ1
+ZSIgdGl0bGVCYXJWaXNpYmxlPSJ0cnVlIiBtb2RhbD0iZmFsc2UiIHRyYW5zcGFyZW50TW9kZT0i
+dHJ1ZSIgdHJhbnNwYXJlbnREZWxheT0iMTAwMCIgdHJhbnNwYXJlbnRSYXRpbz0iMC4yIiBhZGRU
+b1Rhc2tCYXI9ImZhbHNlIiBhbHdheXNPblRvcD0idHJ1ZSIgb3NEZWNvcmF0ZWQ9ImZhbHNlIiBy
+ZXNpemFibGU9InRydWUiPgogICAgICAgICAgICAgICAgICAgIDxsb2NhdGlvbiB4PSIxNTAiIHk9
+IjIwMCIvPgogICAgICAgICAgICAgICAgICAgIDxzaXplIHdpZHRoPSIyMjAiIGhlaWdodD0iMjAw
+Ii8+CiAgICAgICAgICAgICAgICA8L2Zsb2F0aW5nPgogICAgICAgICAgICAgICAgPGZsb2F0aW5n
+TGl2ZSBhbmltYXRpbmc9InRydWUiIGF1dG9IaWRlPSJmYWxzZSIgZW5hYmxlZD0idHJ1ZSIgaGlk
+ZVJlcHJlc2VudGF0aXZlQnV0dG9uT25WaXNpYmxlPSJmYWxzZSIgaWRWaXNpYmxlT25UaXRsZUJh
+cj0idHJ1ZSIgdGl0bGVCYXJCdXR0b25zVmlzaWJsZT0idHJ1ZSIgdGl0bGVCYXJWaXNpYmxlPSJ0
+cnVlIiB0cmFuc3BhcmVudE1vZGU9InRydWUiIHRyYW5zcGFyZW50RGVsYXk9IjEwMDAiIHRyYW5z
+cGFyZW50UmF0aW89IjAuNSIgcmVzaXphYmxlPSJ0cnVlIi8+CiAgICAgICAgICAgICAgICA8YW5j
+aG9yIHZpc2libGU9InRydWUiIHRpdGxlPSImIzIyMDtiZXJibGljayIgcHJldmlld0VuYWJsZWQ9
+InRydWUiIHByZXZpZXdEZWxheT0iMTAwMCIgcHJldmlld1RyYW5zcGFyZW50UmF0aW89IjAuNjUi
+PgogICAgICAgICAgICAgICAgICAgIDxsb2NraW5nQW5jaG9ycz48L2xvY2tpbmdBbmNob3JzPgog
+ICAgICAgICAgICAgICAgPC9hbmNob3I+CiAgICAgICAgICAgIDwvZGVzY3JpcHRvcnM+CiAgICAg
+ICAgPC90b29sV2luZG93PgogICAgICAgIDx0b29sV2luZG93IGlkPSJTY2huZWxsenVncmlmZiIg
+YXZhaWxhYmxlPSJ0cnVlIiB2aXNpYmxlPSJ0cnVlIiBhY3RpdmU9InRydWUiIGF1dG9IaWRlPSJ0
+cnVlIiBhbmNob3I9IkxFRlQiIGFuY2hvckluZGV4PSIzIiB0eXBlPSJET0NLRUQiIGFnZ3JlZ2F0
+ZU1vZGU9ImZhbHNlIiBtYXhpbWl6ZWQ9ImZhbHNlIiBpbmRleD0iMSIgZmxhc2hpbmc9ImZhbHNl
+IiBsb2NrZWRPbkFuY2hvcj0iZmFsc2UiIGhpZGVPblplcm9UYWJzPSJ0cnVlIj4KICAgICAgICAg
+ICAgPGRlc2NyaXB0b3JzPgogICAgICAgICAgICAgICAgPGRvY2tlZCBhbmltYXRpbmc9InRydWUi
+IGF1dG9IaWRlPSJ0cnVlIiBlbmFibGVkPSJ0cnVlIiBoaWRlUmVwcmVzZW50YXRpdmVCdXR0b25P
+blZpc2libGU9ImZhbHNlIiBpZFZpc2libGVPblRpdGxlQmFyPSJ0cnVlIiB0aXRsZUJhckJ1dHRv
+bnNWaXNpYmxlPSJ0cnVlIiB0aXRsZUJhclZpc2libGU9InRydWUiIGRvY2tMZW5ndGg9IjI1MCIg
+bWluaW11bURvY2tMZW5ndGg9IjEwMCIgcG9wdXBNZW51RW5hYmxlZD0idHJ1ZSIvPgogICAgICAg
+ICAgICAgICAgPHNsaWRpbmcgYW5pbWF0aW5nPSJ0cnVlIiBhdXRvSGlkZT0idHJ1ZSIgZW5hYmxl
+ZD0iZmFsc2UiIGhpZGVSZXByZXNlbnRhdGl2ZUJ1dHRvbk9uVmlzaWJsZT0iZmFsc2UiIGlkVmlz
+aWJsZU9uVGl0bGVCYXI9InRydWUiIHRpdGxlQmFyQnV0dG9uc1Zpc2libGU9InRydWUiIHRpdGxl
+QmFyVmlzaWJsZT0idHJ1ZSIgdHJhbnNwYXJlbnRNb2RlPSJ0cnVlIiB0cmFuc3BhcmVudERlbGF5
+PSIwIiB0cmFuc3BhcmVudFJhdGlvPSIwLjgiLz4KICAgICAgICAgICAgICAgIDxmbG9hdGluZyBh
+bmltYXRpbmc9InRydWUiIGF1dG9IaWRlPSJmYWxzZSIgZW5hYmxlZD0idHJ1ZSIgaGlkZVJlcHJl
+c2VudGF0aXZlQnV0dG9uT25WaXNpYmxlPSJmYWxzZSIgaWRWaXNpYmxlT25UaXRsZUJhcj0idHJ1
+ZSIgdGl0bGVCYXJCdXR0b25zVmlzaWJsZT0idHJ1ZSIgdGl0bGVCYXJWaXNpYmxlPSJ0cnVlIiBt
+b2RhbD0iZmFsc2UiIHRyYW5zcGFyZW50TW9kZT0idHJ1ZSIgdHJhbnNwYXJlbnREZWxheT0iMTAw
+MCIgdHJhbnNwYXJlbnRSYXRpbz0iMC4yIiBhZGRUb1Rhc2tCYXI9ImZhbHNlIiBhbHdheXNPblRv
+cD0idHJ1ZSIgb3NEZWNvcmF0ZWQ9ImZhbHNlIiByZXNpemFibGU9InRydWUiPgogICAgICAgICAg
+ICAgICAgICAgIDxsb2NhdGlvbiB4PSIzMjAiIHk9IjIxOSIvPgogICAgICAgICAgICAgICAgICAg
+IDxzaXplIHdpZHRoPSIyMjAiIGhlaWdodD0iMjgwIi8+CiAgICAgICAgICAgICAgICA8L2Zsb2F0
+aW5nPgogICAgICAgICAgICAgICAgPGZsb2F0aW5nTGl2ZSBhbmltYXRpbmc9InRydWUiIGF1dG9I
+aWRlPSJmYWxzZSIgZW5hYmxlZD0idHJ1ZSIgaGlkZVJlcHJlc2VudGF0aXZlQnV0dG9uT25WaXNp
+YmxlPSJmYWxzZSIgaWRWaXNpYmxlT25UaXRsZUJhcj0idHJ1ZSIgdGl0bGVCYXJCdXR0b25zVmlz
+aWJsZT0idHJ1ZSIgdGl0bGVCYXJWaXNpYmxlPSJ0cnVlIiBtb2RhbD0iZmFsc2UiIHRyYW5zcGFy
+ZW50TW9kZT0idHJ1ZSIgdHJhbnNwYXJlbnREZWxheT0iMTAwMCIgdHJhbnNwYXJlbnRSYXRpbz0i
+MC4yIiBhZGRUb1Rhc2tCYXI9ImZhbHNlIiBhbHdheXNPblRvcD0idHJ1ZSIgb3NEZWNvcmF0ZWQ9
+ImZhbHNlIiByZXNpemFibGU9InRydWUiPgogICAgICAgICAgICAgICAgICAgIDxsb2NhdGlvbiB4
+PSIyMyIgeT0iNTgiLz4KICAgICAgICAgICAgICAgICAgICA8c2l6ZSB3aWR0aD0iMTY1NyIgaGVp
+Z2h0PSI4OTMiLz4KICAgICAgICAgICAgICAgIDwvZmxvYXRpbmdMaXZlPgogICAgICAgICAgICAg
+ICAgPGFuY2hvciB2aXNpYmxlPSJ0cnVlIiB0aXRsZT0iU2NobmVsbHp1Z3JpZmYiIHByZXZpZXdF
+bmFibGVkPSJ0cnVlIiBwcmV2aWV3RGVsYXk9IjEwMDAiIHByZXZpZXdUcmFuc3BhcmVudFJhdGlv
+PSIwLjY1Ij4KICAgICAgICAgICAgICAgICAgICA8bG9ja2luZ0FuY2hvcnM+PC9sb2NraW5nQW5j
+aG9ycz4KICAgICAgICAgICAgICAgIDwvYW5jaG9yPgogICAgICAgICAgICA8L2Rlc2NyaXB0b3Jz
+PgogICAgICAgIDwvdG9vbFdpbmRvdz4KICAgICAgICA8dG9vbFdpbmRvdyBpZD0iQWRyZXNzYnVj
+aCIgYXZhaWxhYmxlPSJ0cnVlIiB2aXNpYmxlPSJmYWxzZSIgYWN0aXZlPSJmYWxzZSIgYXV0b0hp
+ZGU9ImZhbHNlIiBhbmNob3I9IkxFRlQiIGFuY2hvckluZGV4PSIyIiB0eXBlPSJET0NLRUQiIGFn
+Z3JlZ2F0ZU1vZGU9ImZhbHNlIiBtYXhpbWl6ZWQ9ImZhbHNlIiBpbmRleD0iMyIgZmxhc2hpbmc9
+ImZhbHNlIiBsb2NrZWRPbkFuY2hvcj0iZmFsc2UiIGhpZGVPblplcm9UYWJzPSJ0cnVlIj4KICAg
+ICAgICAgICAgPGRlc2NyaXB0b3JzPgogICAgICAgICAgICAgICAgPGRvY2tlZCBhbmltYXRpbmc9
+InRydWUiIGF1dG9IaWRlPSJmYWxzZSIgZW5hYmxlZD0idHJ1ZSIgaGlkZVJlcHJlc2VudGF0aXZl
+QnV0dG9uT25WaXNpYmxlPSJmYWxzZSIgaWRWaXNpYmxlT25UaXRsZUJhcj0idHJ1ZSIgdGl0bGVC
+YXJCdXR0b25zVmlzaWJsZT0idHJ1ZSIgdGl0bGVCYXJWaXNpYmxlPSJ0cnVlIiBkb2NrTGVuZ3Ro
+PSIyNTAiIG1pbmltdW1Eb2NrTGVuZ3RoPSIxMDAiIHBvcHVwTWVudUVuYWJsZWQ9InRydWUiLz4K
+ICAgICAgICAgICAgICAgIDxzbGlkaW5nIGFuaW1hdGluZz0idHJ1ZSIgYXV0b0hpZGU9InRydWUi
+IGVuYWJsZWQ9ImZhbHNlIiBoaWRlUmVwcmVzZW50YXRpdmVCdXR0b25PblZpc2libGU9ImZhbHNl
+IiBpZFZpc2libGVPblRpdGxlQmFyPSJ0cnVlIiB0aXRsZUJhckJ1dHRvbnNWaXNpYmxlPSJ0cnVl
+IiB0aXRsZUJhclZpc2libGU9InRydWUiIHRyYW5zcGFyZW50TW9kZT0idHJ1ZSIgdHJhbnNwYXJl
+bnREZWxheT0iMCIgdHJhbnNwYXJlbnRSYXRpbz0iMC44Ii8+CiAgICAgICAgICAgICAgICA8Zmxv
+YXRpbmcgYW5pbWF0aW5nPSJ0cnVlIiBhdXRvSGlkZT0iZmFsc2UiIGVuYWJsZWQ9InRydWUiIGhp
+ZGVSZXByZXNlbnRhdGl2ZUJ1dHRvbk9uVmlzaWJsZT0iZmFsc2UiIGlkVmlzaWJsZU9uVGl0bGVC
+YXI9InRydWUiIHRpdGxlQmFyQnV0dG9uc1Zpc2libGU9InRydWUiIHRpdGxlQmFyVmlzaWJsZT0i
+dHJ1ZSIgbW9kYWw9ImZhbHNlIiB0cmFuc3BhcmVudE1vZGU9InRydWUiIHRyYW5zcGFyZW50RGVs
+YXk9IjEwMDAiIHRyYW5zcGFyZW50UmF0aW89IjAuMiIgYWRkVG9UYXNrQmFyPSJmYWxzZSIgYWx3
+YXlzT25Ub3A9InRydWUiIG9zRGVjb3JhdGVkPSJmYWxzZSIgcmVzaXphYmxlPSJ0cnVlIj4KICAg
+ICAgICAgICAgICAgICAgICA8bG9jYXRpb24geD0iMTUwIiB5PSIyMDAiLz4KICAgICAgICAgICAg
+ICAgICAgICA8c2l6ZSB3aWR0aD0iMjIwIiBoZWlnaHQ9IjIwMCIvPgogICAgICAgICAgICAgICAg
+PC9mbG9hdGluZz4KICAgICAgICAgICAgICAgIDxmbG9hdGluZ0xpdmUgYW5pbWF0aW5nPSJ0cnVl
+IiBhdXRvSGlkZT0iZmFsc2UiIGVuYWJsZWQ9InRydWUiIGhpZGVSZXByZXNlbnRhdGl2ZUJ1dHRv
+bk9uVmlzaWJsZT0iZmFsc2UiIGlkVmlzaWJsZU9uVGl0bGVCYXI9InRydWUiIHRpdGxlQmFyQnV0
+dG9uc1Zpc2libGU9InRydWUiIHRpdGxlQmFyVmlzaWJsZT0idHJ1ZSIgdHJhbnNwYXJlbnRNb2Rl
+PSJ0cnVlIiB0cmFuc3BhcmVudERlbGF5PSIxMDAwIiB0cmFuc3BhcmVudFJhdGlvPSIwLjUiIHJl
+c2l6YWJsZT0idHJ1ZSIvPgogICAgICAgICAgICAgICAgPGFuY2hvciB2aXNpYmxlPSJ0cnVlIiB0
+aXRsZT0iQWRyZXNzYnVjaCIgcHJldmlld0VuYWJsZWQ9InRydWUiIHByZXZpZXdEZWxheT0iMTAw
+MCIgcHJldmlld1RyYW5zcGFyZW50UmF0aW89IjAuNjUiPgogICAgICAgICAgICAgICAgICAgIDxs
+b2NraW5nQW5jaG9ycz48L2xvY2tpbmdBbmNob3JzPgogICAgICAgICAgICAgICAgPC9hbmNob3I+
+CiAgICAgICAgICAgIDwvZGVzY3JpcHRvcnM+CiAgICAgICAgPC90b29sV2luZG93PgogICAgICAg
+IDx0b29sV2luZG93IGlkPSJLYXJ0ZSAoU3VjaGUpIiBhdmFpbGFibGU9InRydWUiIHZpc2libGU9
+ImZhbHNlIiBhY3RpdmU9ImZhbHNlIiBhdXRvSGlkZT0iZmFsc2UiIGFuY2hvcj0iTEVGVCIgYW5j
+aG9ySW5kZXg9IjEiIHR5cGU9IkRPQ0tFRCIgYWdncmVnYXRlTW9kZT0iZmFsc2UiIG1heGltaXpl
+ZD0iZmFsc2UiIGluZGV4PSI0IiBmbGFzaGluZz0iZmFsc2UiIGxvY2tlZE9uQW5jaG9yPSJmYWxz
+ZSIgaGlkZU9uWmVyb1RhYnM9InRydWUiPgogICAgICAgICAgICA8ZGVzY3JpcHRvcnM+CiAgICAg
+ICAgICAgICAgICA8ZG9ja2VkIGFuaW1hdGluZz0idHJ1ZSIgYXV0b0hpZGU9ImZhbHNlIiBlbmFi
+bGVkPSJ0cnVlIiBoaWRlUmVwcmVzZW50YXRpdmVCdXR0b25PblZpc2libGU9ImZhbHNlIiBpZFZp
+c2libGVPblRpdGxlQmFyPSJ0cnVlIiB0aXRsZUJhckJ1dHRvbnNWaXNpYmxlPSJ0cnVlIiB0aXRs
+ZUJhclZpc2libGU9InRydWUiIGRvY2tMZW5ndGg9IjI1MCIgbWluaW11bURvY2tMZW5ndGg9IjEw
+MCIgcG9wdXBNZW51RW5hYmxlZD0idHJ1ZSIvPgogICAgICAgICAgICAgICAgPHNsaWRpbmcgYW5p
+bWF0aW5nPSJ0cnVlIiBhdXRvSGlkZT0idHJ1ZSIgZW5hYmxlZD0iZmFsc2UiIGhpZGVSZXByZXNl
+bnRhdGl2ZUJ1dHRvbk9uVmlzaWJsZT0iZmFsc2UiIGlkVmlzaWJsZU9uVGl0bGVCYXI9InRydWUi
+IHRpdGxlQmFyQnV0dG9uc1Zpc2libGU9InRydWUiIHRpdGxlQmFyVmlzaWJsZT0idHJ1ZSIgdHJh
+bnNwYXJlbnRNb2RlPSJ0cnVlIiB0cmFuc3BhcmVudERlbGF5PSIwIiB0cmFuc3BhcmVudFJhdGlv
+PSIwLjgiLz4KICAgICAgICAgICAgICAgIDxmbG9hdGluZyBhbmltYXRpbmc9InRydWUiIGF1dG9I
+aWRlPSJmYWxzZSIgZW5hYmxlZD0idHJ1ZSIgaGlkZVJlcHJlc2VudGF0aXZlQnV0dG9uT25WaXNp
+YmxlPSJmYWxzZSIgaWRWaXNpYmxlT25UaXRsZUJhcj0idHJ1ZSIgdGl0bGVCYXJCdXR0b25zVmlz
+aWJsZT0idHJ1ZSIgdGl0bGVCYXJWaXNpYmxlPSJ0cnVlIiBtb2RhbD0iZmFsc2UiIHRyYW5zcGFy
+ZW50TW9kZT0idHJ1ZSIgdHJhbnNwYXJlbnREZWxheT0iMTAwMCIgdHJhbnNwYXJlbnRSYXRpbz0i
+MC4yIiBhZGRUb1Rhc2tCYXI9ImZhbHNlIiBhbHdheXNPblRvcD0idHJ1ZSIgb3NEZWNvcmF0ZWQ9
+ImZhbHNlIiByZXNpemFibGU9InRydWUiPgogICAgICAgICAgICAgICAgICAgIDxsb2NhdGlvbiB4
+PSIxNTAiIHk9IjIwMCIvPgogICAgICAgICAgICAgICAgICAgIDxzaXplIHdpZHRoPSIyMjAiIGhl
+aWdodD0iMjAwIi8+CiAgICAgICAgICAgICAgICA8L2Zsb2F0aW5nPgogICAgICAgICAgICAgICAg
+PGZsb2F0aW5nTGl2ZSBhbmltYXRpbmc9InRydWUiIGF1dG9IaWRlPSJmYWxzZSIgZW5hYmxlZD0i
+dHJ1ZSIgaGlkZVJlcHJlc2VudGF0aXZlQnV0dG9uT25WaXNpYmxlPSJmYWxzZSIgaWRWaXNpYmxl
+T25UaXRsZUJhcj0idHJ1ZSIgdGl0bGVCYXJCdXR0b25zVmlzaWJsZT0idHJ1ZSIgdGl0bGVCYXJW
+aXNpYmxlPSJ0cnVlIiB0cmFuc3BhcmVudE1vZGU9InRydWUiIHRyYW5zcGFyZW50RGVsYXk9IjEw
+MDAiIHRyYW5zcGFyZW50UmF0aW89IjAuNSIgcmVzaXphYmxlPSJ0cnVlIi8+CiAgICAgICAgICAg
+ICAgICA8YW5jaG9yIHZpc2libGU9InRydWUiIHRpdGxlPSJLYXJ0ZSAoU3VjaGUpIiBwcmV2aWV3
+RW5hYmxlZD0idHJ1ZSIgcHJldmlld0RlbGF5PSIxMDAwIiBwcmV2aWV3VHJhbnNwYXJlbnRSYXRp
+bz0iMC42NSI+CiAgICAgICAgICAgICAgICAgICAgPGxvY2tpbmdBbmNob3JzPjwvbG9ja2luZ0Fu
+Y2hvcnM+CiAgICAgICAgICAgICAgICA8L2FuY2hvcj4KICAgICAgICAgICAgPC9kZXNjcmlwdG9y
+cz4KICAgICAgICA8L3Rvb2xXaW5kb3c+CiAgICAgICAgPHRvb2xXaW5kb3cgaWQ9IkhpbGZlIiBh
+dmFpbGFibGU9InRydWUiIHZpc2libGU9ImZhbHNlIiBhY3RpdmU9ImZhbHNlIiBhdXRvSGlkZT0i
+ZmFsc2UiIGFuY2hvcj0iTEVGVCIgYW5jaG9ySW5kZXg9IjAiIHR5cGU9IkRPQ0tFRCIgYWdncmVn
+YXRlTW9kZT0iZmFsc2UiIG1heGltaXplZD0iZmFsc2UiIGluZGV4PSI1IiBmbGFzaGluZz0iZmFs
+c2UiIGxvY2tlZE9uQW5jaG9yPSJmYWxzZSIgaGlkZU9uWmVyb1RhYnM9InRydWUiPgogICAgICAg
+ICAgICA8ZGVzY3JpcHRvcnM+CiAgICAgICAgICAgICAgICA8ZG9ja2VkIGFuaW1hdGluZz0idHJ1
+ZSIgYXV0b0hpZGU9ImZhbHNlIiBlbmFibGVkPSJ0cnVlIiBoaWRlUmVwcmVzZW50YXRpdmVCdXR0
+b25PblZpc2libGU9ImZhbHNlIiBpZFZpc2libGVPblRpdGxlQmFyPSJ0cnVlIiB0aXRsZUJhckJ1
+dHRvbnNWaXNpYmxlPSJ0cnVlIiB0aXRsZUJhclZpc2libGU9InRydWUiIGRvY2tMZW5ndGg9IjI1
+MCIgbWluaW11bURvY2tMZW5ndGg9IjEwMCIgcG9wdXBNZW51RW5hYmxlZD0idHJ1ZSIvPgogICAg
+ICAgICAgICAgICAgPHNsaWRpbmcgYW5pbWF0aW5nPSJ0cnVlIiBhdXRvSGlkZT0idHJ1ZSIgZW5h
+YmxlZD0iZmFsc2UiIGhpZGVSZXByZXNlbnRhdGl2ZUJ1dHRvbk9uVmlzaWJsZT0iZmFsc2UiIGlk
+VmlzaWJsZU9uVGl0bGVCYXI9InRydWUiIHRpdGxlQmFyQnV0dG9uc1Zpc2libGU9InRydWUiIHRp
+dGxlQmFyVmlzaWJsZT0idHJ1ZSIgdHJhbnNwYXJlbnRNb2RlPSJ0cnVlIiB0cmFuc3BhcmVudERl
+bGF5PSIwIiB0cmFuc3BhcmVudFJhdGlvPSIwLjgiLz4KICAgICAgICAgICAgICAgIDxmbG9hdGlu
+ZyBhbmltYXRpbmc9InRydWUiIGF1dG9IaWRlPSJmYWxzZSIgZW5hYmxlZD0idHJ1ZSIgaGlkZVJl
+cHJlc2VudGF0aXZlQnV0dG9uT25WaXNpYmxlPSJmYWxzZSIgaWRWaXNpYmxlT25UaXRsZUJhcj0i
+dHJ1ZSIgdGl0bGVCYXJCdXR0b25zVmlzaWJsZT0idHJ1ZSIgdGl0bGVCYXJWaXNpYmxlPSJ0cnVl
+IiBtb2RhbD0iZmFsc2UiIHRyYW5zcGFyZW50TW9kZT0idHJ1ZSIgdHJhbnNwYXJlbnREZWxheT0i
+MTAwMCIgdHJhbnNwYXJlbnRSYXRpbz0iMC4yIiBhZGRUb1Rhc2tCYXI9ImZhbHNlIiBhbHdheXNP
+blRvcD0idHJ1ZSIgb3NEZWNvcmF0ZWQ9ImZhbHNlIiByZXNpemFibGU9InRydWUiPgogICAgICAg
+ICAgICAgICAgICAgIDxsb2NhdGlvbiB4PSIxNTAiIHk9IjIwMCIvPgogICAgICAgICAgICAgICAg
+ICAgIDxzaXplIHdpZHRoPSIyMjAiIGhlaWdodD0iMjAwIi8+CiAgICAgICAgICAgICAgICA8L2Zs
+b2F0aW5nPgogICAgICAgICAgICAgICAgPGZsb2F0aW5nTGl2ZSBhbmltYXRpbmc9InRydWUiIGF1
+dG9IaWRlPSJmYWxzZSIgZW5hYmxlZD0idHJ1ZSIgaGlkZVJlcHJlc2VudGF0aXZlQnV0dG9uT25W
+aXNpYmxlPSJmYWxzZSIgaWRWaXNpYmxlT25UaXRsZUJhcj0idHJ1ZSIgdGl0bGVCYXJCdXR0b25z
+VmlzaWJsZT0idHJ1ZSIgdGl0bGVCYXJWaXNpYmxlPSJ0cnVlIiB0cmFuc3BhcmVudE1vZGU9InRy
+dWUiIHRyYW5zcGFyZW50RGVsYXk9IjEwMDAiIHRyYW5zcGFyZW50UmF0aW89IjAuNSIgcmVzaXph
+YmxlPSJ0cnVlIi8+CiAgICAgICAgICAgICAgICA8YW5jaG9yIHZpc2libGU9InRydWUiIHRpdGxl
+PSJIaWxmZSIgcHJldmlld0VuYWJsZWQ9InRydWUiIHByZXZpZXdEZWxheT0iMTAwMCIgcHJldmll
+d1RyYW5zcGFyZW50UmF0aW89IjAuNjUiPgogICAgICAgICAgICAgICAgICAgIDxsb2NraW5nQW5j
+aG9ycz48L2xvY2tpbmdBbmNob3JzPgogICAgICAgICAgICAgICAgPC9hbmNob3I+CiAgICAgICAg
+ICAgIDwvZGVzY3JpcHRvcnM+CiAgICAgICAgPC90b29sV2luZG93PgogICAgPC90b29sV2luZG93
+cz4KICAgIDx0b29sV2luZG93QmFycz4KICAgICAgICA8dG9vbFdpbmRvd0JhciBhbmNob3I9IkxF
+RlQiIGRpdmlkZXJTaXplPSIzIiBhZ2dyZWdhdGVNb2RlPSJmYWxzZSIgbGVuZ3RoPSIyMyIgdmlz
+aWJsZT0idHJ1ZSIgdG9vbHNWaXNpYmxlPSJ0cnVlIj4KICAgICAgICAgICAgPGxheW91dD4KICAg
+ICAgICAgICAgICAgIDwhW0NEQVRBWwo8amF2YSB2ZXJzaW9uPSIxLjYuMF8yNiIgY2xhc3M9Imph
+dmEuYmVhbnMuWE1MRGVjb2RlciI+IAogPG51bGwvPiAKPC9qYXZhPiAKXV0+CiAgICAgICAgICAg
+IDwvbGF5b3V0PgogICAgICAgIDwvdG9vbFdpbmRvd0Jhcj4KICAgIDwvdG9vbFdpbmRvd0JhcnM+
+CjwvbXlkb2dneT4KCg==]]>
+            </workspace>
+        </toolWindowBar>
+        <toolWindowBar anchor="BOTTOM" dividerSize="3" aggregateMode="false" length="23" visible="true" toolsVisible="true"></toolWindowBar>
+        <toolWindowBar anchor="RIGHT" dividerSize="3" aggregateMode="false" length="23" visible="true" toolsVisible="true"></toolWindowBar>
+        <toolWindowBar anchor="TOP" dividerSize="3" aggregateMode="false" length="23" visible="true" toolsVisible="true"></toolWindowBar>
+    </toolWindowBars>
+</mydoggy>
+

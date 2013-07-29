@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+##ANREDE##
+<br>
+<br>
+##TEXT##
+<br>
+<br>
+##HTML_MFG##
+<br>
+<br>
+<font color="#cccccc">
+##M_HTMLFOOTER##
+</font>
+</body>
+</html>

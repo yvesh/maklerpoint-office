@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/LocalDatabase
+END
+CheckLocalDatabase.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/LocalDatabase/CheckLocalDatabase.java
+END
+LocalDatabaseTools.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/LocalDatabase/LocalDatabaseTools.java
+END
+LocalInitialCreate.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/LocalDatabase/LocalInitialCreate.java
+END
+ScriptellaHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/LocalDatabase/ScriptellaHelper.java
+END
+DdlUtilsHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/LocalDatabase/DdlUtilsHelper.java
+END

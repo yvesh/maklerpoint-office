@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Logging
+END
+Appenders.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Logging/Appenders.java
+END
+Layouts.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Logging/Layouts.java
+END
+NtEventAppenders.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Logging/NtEventAppenders.java
+END
+SyslogAppenders.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Logging/SyslogAppenders.java
+END
+InitializeLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Logging/InitializeLog.java
+END
+Log.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Logging/Log.java
+END
+TextAreaAppender.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Logging/TextAreaAppender.java
+END

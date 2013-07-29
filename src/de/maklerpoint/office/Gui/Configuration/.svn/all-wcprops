@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration
+END
+TagDialogHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/TagDialogHelper.java
+END
+PanelConfigurationDatabase.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/PanelConfigurationDatabase.java
+END
+PanelConfigurationSonstiges.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/PanelConfigurationSonstiges.java
+END
+ConfigurationPanelInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/ConfigurationPanelInterface.java
+END
+ConfigurationPanelTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/ConfigurationPanelTypes.java
+END
+PanelConfigurationDatabase.form
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/PanelConfigurationDatabase.form
+END
+PanelConfigurationGoogle.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/PanelConfigurationGoogle.java
+END
+PanelConfigurationSonstiges.form
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/PanelConfigurationSonstiges.form
+END
+PanelConfigurationEmail.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/PanelConfigurationEmail.java
+END
+PanelConfigurationGoogle.form
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/PanelConfigurationGoogle.form
+END
+PanelConfigurationEmail.form
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/PanelConfigurationEmail.form
+END
+AddConfigurationPanels.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/AddConfigurationPanels.java
+END
+NeuTagDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/NeuTagDialog.java
+END
+NeuTagDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/NeuTagDialog.form
+END
+TagDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/TagDialog.java
+END
+TagDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/TagDialog.form
+END
+ConfigurationDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/ConfigurationDialog.java
+END
+ConfigurationDialog.form
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/maklerpoint/!svn/ver/2/office/src/de/acyrance/CRM/Gui/Configuration/ConfigurationDialog.form
+END

@@ -1,0 +1,44 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+btnNeu.text=Neu
+jLabel6.text=Suche:
+btnDelete.text=L\u00f6schen
+jLabel1.text=Kategorie:
+#NOI18N
+btnNeu.icon=/de/acyrance/CRM/Gui/resources/add.png
+#NOI18N
+btnDelete.icon=/de/acyrance/CRM/Gui/resources/icon_clean/cross-script.png
+#NOI18N
+jLabel6.icon=/de/acyrance/CRM/Gui/resources/magnifier.png
+#NOI18N
+btnSearch.icon=/de/acyrance/CRM/Gui/resources/right.png
+Form.title=Brief / Fax / E-Mail Vorlagen
+#NOI18N
+jLabel1.icon=/de/acyrance/CRM/Gui/resources/icon_clean/table--arrow.png
+btnBrief.text=
+#NOI18N
+btnBrief.icon=/de/acyrance/CRM/Gui/resources/icon_clean/documents/document-word-text.png
+btnFax.text=
+#NOI18N
+btnFax.icon=/de/acyrance/CRM/Gui/resources/icon_clean/telephone-fax.png
+#NOI18N
+btnMail.icon=/de/acyrance/CRM/Gui/resources/icon_clean/documents/blue-document-outlook.png
+btnCancel.text=Abbruch
+btnHelp.text=Hilfe
+btnChose.text=Ausw\u00e4hlen
+btnBrief.toolTipText=Nur Briefe
+btnFax.toolTipText=Nur Faxe
+btnMail.toolTipText=Nur E-Mails
+btnAll.toolTipText=Alle
+#NOI18N
+btnAll.icon=/de/acyrance/CRM/Gui/resources/icon_clean/documents/blue-document-task.png
+#NOI18N
+tablePopup.background=237, 236, 235
+tableRefresh.text=Tabelle aktualisieren
+newBriefItem.text=Neuer Brief
+editBriefItem.text=Brief bearbeiten
+deleteBriefItem.text=Brief l\u00f6schen
+btnEdit.text=Bearbeiten
+#NOI18N
+btnEdit.icon=/de/acyrance/CRM/Gui/resources/edit.png

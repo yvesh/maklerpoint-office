@@ -1,0 +1,63 @@
+btnVertraege.text=Vertr\u00e4ge
+#NOI18N
+btnVertraege.icon=/de/acyrance/CRM/Gui/resources/bigicons/vertrag.png
+btnRechnung.text=Rechnungen
+#NOI18N
+btnRechnung.icon=/de/acyrance/CRM/Gui/resources/bigicons/Invoice.png
+#NOI18N
+toolbarFile.background=254, 254, 254
+#NOI18N
+btnRechnung.background=254, 254, 254
+#NOI18N
+btnVertraege.background=254, 254, 254
+Form.title=Dateien von
+btnVersicherung.text=Versicherungen
+#NOI18N
+btnVersicherung.icon=/de/acyrance/CRM/Gui/resources/bigicons/insurance.png
+#NOI18N
+btnVersicherung.background=254, 254, 254
+btnScans.text=Scans
+#NOI18N
+btnScans.icon=/de/acyrance/CRM/Gui/resources/bigicons/scanner.png
+#NOI18N
+btnScans.background=254, 254, 254
+btnVerlauf.text=Verlauf
+#NOI18N
+btnVerlauf.icon=/de/acyrance/CRM/Gui/resources/bigicons/history.png
+#NOI18N
+btnVerlauf.background=254, 254, 254
+#NOI18N
+Form.foreground=255, 255, 255
+#NOI18N
+Form.background=255, 255, 255
+#NOI18N
+panel_holder.background=237, 236, 235
+#NOI18N
+panel_content.background=237, 236, 235
+btnDelete.text=
+#NOI18N
+btnDelete.icon=/de/acyrance/CRM/Gui/resources/cross.png
+#NOI18N
+btnShowinfo.icon=/de/acyrance/CRM/Gui/resources/information.png
+btnShowinfo.text=
+btnShowinfo.toolTipText=Datei Informationen
+btnDelete.toolTipText=Ausgew\u00e4hlte Datei l\u00f6schen
+btnEdit.toolTipText=Datei Beschreibung bearbeiten
+#NOI18N
+btnEdit.icon=/de/acyrance/CRM/Gui/resources/edit.png
+#NOI18N
+btnBeratung.background=254, 254, 254
+btnBeratung.text=Beratungsprotokoll
+#NOI18N
+btnBeratung.icon=/de/acyrance/CRM/Gui/resources/folder/blu_documents.png
+btnSonstiges.text=Sonstiges
+#NOI18N
+btnSonstiges.background=254, 254, 254
+btnSearch.toolTipText=Dateien durchsuchen
+#NOI18N
+btnSearch.icon=/de/acyrance/CRM/Gui/resources/magnifier.png
+btnArchive.toolTipText=Ausgew\u00e4hlte Datei l\u00f6schen
+#NOI18N
+btnArchive.icon=/de/acyrance/CRM/Gui/resources/compress.png
+#NOI18N
+btnSonstiges.icon=/de/acyrance/CRM/Gui/resources/bigicons/file-manager.png

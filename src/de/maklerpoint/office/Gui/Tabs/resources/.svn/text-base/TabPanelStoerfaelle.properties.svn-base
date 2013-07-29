@@ -1,0 +1,30 @@
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+
+btnNeu.text=Neu
+btnRefresh.toolTipText=Tabelle aktualisieren
+jLabel6.text=Suche:
+btnEdit.text=Bearbeiten
+alleDBMenuItem.text=Alle St\u00f6rf\u00e4lle
+deletedDBMenuItem.text=Gel\u00f6schte St\u00f6rf\u00e4lle
+archivedDBMenuItem.text=Archivierte St\u00f6rf\u00e4lle
+aktiveDBMenuItem.text=Aktive St\u00f6rf\u00e4lle
+alleDBMenuItem.toolTipText=Zeigt alle St\u00f6rf\u00e4lle (auch gel\u00f6schte, archivierte etc.)
+#NOI18N
+btnNeu.icon=/de/acyrance/CRM/Gui/resources/add.png
+#NOI18N
+btnEdit.icon=/de/acyrance/CRM/Gui/resources/edit.png
+#NOI18N
+jLabel6.icon=/de/acyrance/CRM/Gui/resources/magnifier.png
+#NOI18N
+btnSearch.icon=/de/acyrance/CRM/Gui/resources/right.png
+#NOI18N
+btnRefresh.icon=/de/acyrance/CRM/Gui/resources/icon_clean/table-refresh.png
+newMenuItem.text=Neu
+refreshMenuItem.text=Tabelle aktuallisieren
+reguliertMenuItem.text=Als reguliert markieren
+editMenuItem.text=Bearbeiten
+btnRegulate.toolTipText=Als erledigt markieren
+btnRegulate.text=Erledigt
+#NOI18N
+btnRegulate.icon=/de/acyrance/CRM/Gui/resources/accept.png

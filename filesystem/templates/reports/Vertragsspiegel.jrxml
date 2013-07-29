@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Vertragsspiegel" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     *,
+     versicherer.`id` AS versicherer_id,
+     versicherer.`parentId` AS versicherer_parentId,
+     versicherer.`parentName` AS versicherer_parentName,
+     versicherer.`vuNummer` AS versicherer_vuNummer,
+     versicherer.`name` AS versicherer_name,
+     versicherer.`nameZusatz` AS versicherer_nameZusatz,
+     versicherer.`nameZusatz2` AS versicherer_nameZusatz2,
+     versicherer.`kuerzel` AS versicherer_kuerzel,
+     versicherer.`gesellschaftsNr` AS versicherer_gesellschaftsNr,
+     versicherer.`strasse` AS versicherer_strasse,
+     versicherer.`plz` AS versicherer_plz,
+     versicherer.`stadt` AS versicherer_stadt,
+     versicherer.`bundesLand` AS versicherer_bundesLand,
+     versicherer.`land` AS versicherer_land,
+     versicherer.`postfach` AS versicherer_postfach,
+     versicherer.`postfachName` AS versicherer_postfachName,
+     versicherer.`postfachPlz` AS versicherer_postfachPlz,
+     versicherer.`postfachOrt` AS versicherer_postfachOrt,
+     versicherer.`vermittelbar` AS versicherer_vermittelbar,
+     versicherer.`communication1` AS versicherer_communication1,
+     versicherer.`communication2` AS versicherer_communication2,
+     versicherer.`communication3` AS versicherer_communication3,
+     versicherer.`communication4` AS versicherer_communication4,
+     versicherer.`communication5` AS versicherer_communication5,
+     versicherer.`communication6` AS versicherer_communication6,
+     versicherer.`communication1Type` AS versicherer_communication1Type,
+     versicherer.`communication2Type` AS versicherer_communication2Type,
+     versicherer.`communication3Type` AS versicherer_communication3Type,
+     versicherer.`communication4Type` AS versicherer_communication4Type,
+     versicherer.`communication5Type` AS versicherer_communication5Type,
+     versicherer.`communication6Type` AS versicherer_communication6Type,
+     versicherer.`comments` AS versicherer_comments,
+     versicherer.`custom1` AS versicherer_custom1,
+     versicherer.`custom2` AS versicherer_custom2,
+     versicherer.`custom3` AS versicherer_custom3,
+     versicherer.`custom4` AS versicherer_custom4,
+     versicherer.`custom5` AS versicherer_custom5,
+     versicherer.`created` AS versicherer_created,
+     versicherer.`modified` AS versicherer_modified,
+     versicherer.`status` AS versicherer_status,
+     vertraege.`versichererId` AS vertraege_versichererId
+FROM
+     `vertraege` vertraege INNER JOIN `kunden` kunden ON vertraege.`kundenKennung` = kunden.`kundenNR`
+     INNER JOIN `versicherer` versicherer ON vertraege.`versichererId` = versicherer.`id`
+WHERE
+     vertraege.status = 0
+HAVING
+     vertraege.`versichererId` = versicherer.id]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="parentId" class="java.lang.Integer"/>
+	<field name="versichererId" class="java.lang.Integer"/>
+	<field name="produktId" class="java.lang.Integer"/>
+	<field name="kundenKennung" class="java.lang.String"/>
+	<field name="bankkontoId" class="java.lang.Integer"/>
+	<field name="zusatzadresseId" class="java.lang.Integer"/>
+	<field name="beratungsprotokollId" class="java.lang.Integer"/>
+	<field name="mandantenId" class="java.lang.Integer"/>
+	<field name="benutzerId" class="java.lang.Integer"/>
+	<field name="vertragsTyp" class="java.lang.Integer"/>
+	<field name="vertragGrp" class="java.lang.Integer"/>
+	<field name="policennr" class="java.lang.String"/>
+	<field name="policeDatum" class="java.sql.Timestamp"/>
+	<field name="wertungDatum" class="java.sql.Timestamp"/>
+	<field name="courtage" class="java.lang.Boolean"/>
+	<field name="zahlWeise" class="java.lang.Integer"/>
+	<field name="zahlArt" class="java.lang.String"/>
+	<field name="selbstbeteiligung" class="java.lang.Integer"/>
+	<field name="jahresNetto" class="java.lang.Double"/>
+	<field name="steuer" class="java.lang.Double"/>
+	<field name="gebuehr" class="java.lang.Double"/>
+	<field name="jahresBrutto" class="java.lang.Double"/>
+	<field name="rabatt" class="java.lang.Double"/>
+	<field name="zuschlag" class="java.lang.Double"/>
+	<field name="waehrungId" class="java.lang.Integer"/>
+	<field name="antrag" class="java.sql.Timestamp"/>
+	<field name="faellig" class="java.sql.Timestamp"/>
+	<field name="hauptfaellig" class="java.sql.Timestamp"/>
+	<field name="beginn" class="java.sql.Timestamp"/>
+	<field name="ablauf" class="java.sql.Timestamp"/>
+	<field name="maklerEingang" class="java.sql.Timestamp"/>
+	<field name="stornoDatum" class="java.sql.Timestamp"/>
+	<field name="storno" class="java.sql.Timestamp"/>
+	<field name="stornoGrund" class="java.lang.String"/>
+	<field name="laufzeit" class="java.lang.Integer"/>
+	<field name="courtage_datum" class="java.sql.Timestamp"/>
+	<field name="comments" class="java.lang.String"/>
+	<field name="custom1" class="java.lang.String"/>
+	<field name="custom2" class="java.lang.String"/>
+	<field name="custom3" class="java.lang.String"/>
+	<field name="custom4" class="java.lang.String"/>
+	<field name="custom5" class="java.lang.String"/>
+	<field name="created" class="java.sql.Timestamp"/>
+	<field name="modified" class="java.sql.Timestamp"/>
+	<field name="status" class="java.lang.Integer"/>
+	<field name="betreuerId" class="java.lang.Integer"/>
+	<field name="creatorId" class="java.lang.Integer"/>
+	<field name="kundenNr" class="java.lang.String"/>
+	<field name="anrede" class="java.lang.String"/>
+	<field name="titel" class="java.lang.String"/>
+	<field name="firma" class="java.lang.String"/>
+	<field name="vorname" class="java.lang.String"/>
+	<field name="vorname2" class="java.lang.String"/>
+	<field name="vornameWeitere" class="java.lang.String"/>
+	<field name="nachname" class="java.lang.String"/>
+	<field name="street" class="java.lang.String"/>
+	<field name="plz" class="java.lang.String"/>
+	<field name="stadt" class="java.lang.String"/>
+	<field name="bundesland" class="java.lang.String"/>
+	<field name="land" class="java.lang.String"/>
+	<field name="adresseZusatz" class="java.lang.String"/>
+	<field name="adresseZusatz2" class="java.lang.String"/>
+	<field name="communication1" class="java.lang.String"/>
+	<field name="communication2" class="java.lang.String"/>
+	<field name="communication3" class="java.lang.String"/>
+	<field name="communication4" class="java.lang.String"/>
+	<field name="communication5" class="java.lang.String"/>
+	<field name="communication6" class="java.lang.String"/>
+	<field name="communication1Type" class="java.lang.Integer"/>
+	<field name="communication2Type" class="java.lang.Integer"/>
+	<field name="communication3Type" class="java.lang.Integer"/>
+	<field name="communication4Type" class="java.lang.Integer"/>
+	<field name="communication5Type" class="java.lang.Integer"/>
+	<field name="communication6Type" class="java.lang.Integer"/>
+	<field name="typ" class="java.lang.String"/>
+	<field name="familienStand" class="java.lang.String"/>
+	<field name="ehepartnerId" class="java.lang.String"/>
+	<field name="geburtsdatum" class="java.lang.String"/>
+	<field name="nationalitaet" class="java.lang.String"/>
+	<field name="beruf" class="java.lang.String"/>
+	<field name="berufsTyp" class="java.lang.String"/>
+	<field name="berufsOptionen" class="java.lang.String"/>
+	<field name="berufsBesonderheiten" class="java.lang.String"/>
+	<field name="anteilBuerotaetigkeit" class="java.lang.String"/>
+	<field name="beginnRente" class="java.lang.String"/>
+	<field name="beamter" class="java.lang.Boolean"/>
+	<field name="oeffentlicherDienst" class="java.lang.Boolean"/>
+	<field name="einkommen" class="java.lang.Double"/>
+	<field name="einkommenNetto" class="java.lang.Double"/>
+	<field name="steuertabelle" class="java.lang.String"/>
+	<field name="steuerklasse" class="java.lang.String"/>
+	<field name="kirchenSteuer" class="java.lang.String"/>
+	<field name="kinderZahl" class="java.lang.Integer"/>
+	<field name="kinderFreibetrag" class="java.lang.String"/>
+	<field name="religion" class="java.lang.String"/>
+	<field name="rolleImHaushalt" class="java.lang.String"/>
+	<field name="weiterePersonen" class="java.lang.String"/>
+	<field name="weiterePersonenInfo" class="java.lang.String"/>
+	<field name="familienPlanung" class="java.lang.String"/>
+	<field name="werberKennung" class="java.lang.String"/>
+	<field name="defaultKonto" class="java.lang.Integer"/>
+	<field name="geburtsname" class="java.lang.String"/>
+	<field name="ehedatum" class="java.lang.String"/>
+	<field name="parentName" class="java.lang.String"/>
+	<field name="vuNummer" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="nameZusatz" class="java.lang.String"/>
+	<field name="nameZusatz2" class="java.lang.String"/>
+	<field name="kuerzel" class="java.lang.String"/>
+	<field name="gesellschaftsNr" class="java.lang.String"/>
+	<field name="strasse" class="java.lang.String"/>
+	<field name="postfach" class="java.lang.Boolean"/>
+	<field name="postfachName" class="java.lang.String"/>
+	<field name="postfachPlz" class="java.lang.String"/>
+	<field name="postfachOrt" class="java.lang.String"/>
+	<field name="vermittelbar" class="java.lang.Boolean"/>
+	<field name="versicherer_id" class="java.lang.Integer"/>
+	<field name="versicherer_parentId" class="java.lang.Integer"/>
+	<field name="versicherer_parentName" class="java.lang.String"/>
+	<field name="versicherer_vuNummer" class="java.lang.String"/>
+	<field name="versicherer_name" class="java.lang.String"/>
+	<field name="versicherer_nameZusatz" class="java.lang.String"/>
+	<field name="versicherer_nameZusatz2" class="java.lang.String"/>
+	<field name="versicherer_kuerzel" class="java.lang.String"/>
+	<field name="versicherer_gesellschaftsNr" class="java.lang.String"/>
+	<field name="versicherer_strasse" class="java.lang.String"/>
+	<field name="versicherer_plz" class="java.lang.String"/>
+	<field name="versicherer_stadt" class="java.lang.String"/>
+	<field name="versicherer_bundesLand" class="java.lang.String"/>
+	<field name="versicherer_land" class="java.lang.String"/>
+	<field name="versicherer_postfach" class="java.lang.Boolean"/>
+	<field name="versicherer_postfachName" class="java.lang.String"/>
+	<field name="versicherer_postfachPlz" class="java.lang.String"/>
+	<field name="versicherer_postfachOrt" class="java.lang.String"/>
+	<field name="versicherer_vermittelbar" class="java.lang.Boolean"/>
+	<field name="versicherer_communication1" class="java.lang.String"/>
+	<field name="versicherer_communication2" class="java.lang.String"/>
+	<field name="versicherer_communication3" class="java.lang.String"/>
+	<field name="versicherer_communication4" class="java.lang.String"/>
+	<field name="versicherer_communication5" class="java.lang.String"/>
+	<field name="versicherer_communication6" class="java.lang.String"/>
+	<field name="versicherer_communication1Type" class="java.lang.Integer"/>
+	<field name="versicherer_communication2Type" class="java.lang.Integer"/>
+	<field name="versicherer_communication3Type" class="java.lang.Integer"/>
+	<field name="versicherer_communication4Type" class="java.lang.Integer"/>
+	<field name="versicherer_communication5Type" class="java.lang.Integer"/>
+	<field name="versicherer_communication6Type" class="java.lang.Integer"/>
+	<field name="versicherer_comments" class="java.lang.String"/>
+	<field name="versicherer_custom1" class="java.lang.String"/>
+	<field name="versicherer_custom2" class="java.lang.String"/>
+	<field name="versicherer_custom3" class="java.lang.String"/>
+	<field name="versicherer_custom4" class="java.lang.String"/>
+	<field name="versicherer_custom5" class="java.lang.String"/>
+	<field name="versicherer_created" class="java.sql.Timestamp"/>
+	<field name="versicherer_modified" class="java.sql.Timestamp"/>
+	<field name="versicherer_status" class="java.lang.Integer"/>
+	<field name="vertraege_versichererId" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="65" splitType="Stretch">
+			<staticText>
+				<reportElement x="302" y="30" width="249" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kundenvertragsspiegel Report]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="702" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="173" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{kundenKennung}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{vorname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nachname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="302" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{geburtsdatum}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="45" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Versicherer]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="102" y="45" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{versicherer_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="65" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Police]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="102" y="65" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{policennr}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement mode="Transparent" x="602" y="0" width="200" height="50">
+					<printWhenExpression><![CDATA[$F{kundenKennung}]]></printWhenExpression>
+				</reportElement>
+				<jr:Codabar xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" textPosition="bottom">
+					<jr:codeExpression><![CDATA[]]></jr:codeExpression>
+				</jr:Codabar>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
