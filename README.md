@@ -34,6 +34,7 @@ Eckdaten zu MaklerPoint Office:
 - Zahlreiche Export- und Import Schnittstellen, inkl. GDV Import
 - Vollkompatibel mit MaklerPoint Office Web, Office Cloud und zu unseren Mobile Applications für iPhone, iPad und Android
 
+Links
 -------------------------
 Screenshots:
 
@@ -42,9 +43,10 @@ http://www.maklerpoint.de/component/phocagallery/category/1-office?Itemid=95
 Weitere Details:
 
 http://www.maklerpoint.de/index.php/produkte-62/office
--------------------------
+
 
 Installation
+-------------------------
 
 - Install a compatible Database Server (like MySQL, PostgreSQL, SQLExpress etc.)
 - Import the office.sql (or the one with example data) to your database
