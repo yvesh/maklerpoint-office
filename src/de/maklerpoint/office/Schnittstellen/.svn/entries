@@ -1,142 +1,0 @@
-10
-
-dir
-4
-http://localhost/svn/maklerpoint/office/src/de/acyrance/CRM/Schnittstellen
-http://localhost/svn/maklerpoint
-
-
-
-2011-11-13T12:48:11.428896Z
-2
-yves
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-9884dcec-6777-4a34-a7c3-25d457b4cd5b
-
-
-
-
-
-
-0
-
-CSV
-dir
-
-Datev
-dir
-
-Email
-dir
-
-Excel
-dir
-
-ExportImportTypen.java
-file
-
-
-
-
-2011-07-12T10:04:04.000000Z
-b0ad151854e48f088cd43f9ffbd1beba
-2011-11-13T12:48:11.428896Z
-2
-yves
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3314
-
-Google
-dir
-
-Outlook
-dir
-
-PDF
-dir
-
-Reports
-dir
-
-SchnittstellenInterface.java
-file
-
-
-
-
-2010-09-03T11:43:12.000000Z
-6086c6dcf9b4a2e15353ecf1b037f608
-2011-11-13T12:48:11.428896Z
-2
-yves
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-665
-
-Softair
-dir
-
-Txt
-dir
-
-Word
-dir
-
-XML
-dir
-
-iCal
-dir
-

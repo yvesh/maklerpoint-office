@@ -1,8 +1,0 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-
-editor_ergebnis.contentType=text/html
-btn_search.toolTipText=Suchen
-field_cardsearch.text=Adresse
-#NOI18N
-btn_search.icon=/de/acyrance/CRM/Gui/resources/right.png

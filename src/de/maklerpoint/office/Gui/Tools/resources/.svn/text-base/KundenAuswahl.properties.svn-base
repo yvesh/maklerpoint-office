@@ -1,9 +1,0 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-
-okButton.text=OK
-cancelButton.text=Abbruch
-Form.title=Kundenauswahl
-radio_eigene.text=Eigene Kunden
-jLabel1.text=Kurzinfo:
-radio_alle.text=Alle Kunden

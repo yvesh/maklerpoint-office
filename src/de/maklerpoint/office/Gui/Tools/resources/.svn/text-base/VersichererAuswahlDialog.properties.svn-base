@@ -1,7 +1,0 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-
-jLabel1.text=Kurzinfo:
-okButton.text=OK
-cancelButton.text=Abbruch
-Form.title=Auswahl Versicherungsgesellschaft

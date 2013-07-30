@@ -1,102 +1,0 @@
-10
-
-dir
-4
-http://localhost/svn/maklerpoint/office/filesystem
-http://localhost/svn/maklerpoint
-
-
-
-2011-11-27T13:56:16.400271Z
-4
-yves
-has-props
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-9884dcec-6777-4a34-a7c3-25d457b4cd5b
-
-
-
-
-
-
-0
-
-archiv
-dir
-
-backup
-dir
-
-benutzer
-dir
-
-export
-dir
-
-kunden
-dir
-
-muell
-dir
-
-sonstiges
-dir
-
-templates
-dir
-
-test.xml
-file
-
-
-
-
-2011-07-28T15:10:40.000000Z
-fbaa16f7981d980a28e346dc509bd342
-2011-11-13T12:48:11.428896Z
-2
-yves
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-87386
-
-tmp
-dir
-
-versicherer
-dir
-
-vorlagen
-dir
-

@@ -1,8 +1,0 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-
-jLabel1.text=jLabel1
-jScrollPane1.border.title=Bewertungstext
-#NOI18N
-jScrollPane2.background=237, 236, 235
-text_grund.text=Nach EU-Vermittler-Richtlinie sind Sie Verpflichtet, Ihrem Rat eine hinreichende Anzahl von Angeboten und die grundlage der Empfehlung zu Gr\u00fcnde zu legen. Hier k\u00f6nnen Sie diese Begr\u00fcndung z.B. die Vorzu\u00fcge des Produktes hinterlegegen. Diesen Text k\u00f6nnen Sie dann sp\u00e4ter als Textbaustein in Ihren Beratungsprotokollen verwenden.

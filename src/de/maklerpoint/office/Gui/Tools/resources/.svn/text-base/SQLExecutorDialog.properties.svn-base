@@ -1,9 +1,0 @@
-#NOI18N
-jLabel9.foreground=132, 132, 132
-jLabel9.text=<html>\n<body>\nAchtung: Mit der SQL Ausf\u00fchrung haben Sie kompletten und direkten Zugriff auf die MaklerPoint Office Datenbank.<br> Durch Fehleingaben k\u00f6nnen Sie diese irreparabel besch\u00e4digen und Daten l\u00f6schen. <br>\nErstellen Sie vor jedem Zugriff eine Sicherung der Datenbank.\n</body>\n<html>
-jScrollPane1.border.title=Ausgabe:
-#NOI18N
-jLabel9.icon=/de/acyrance/CRM/Gui/resources/icon_clean/database--exclamation.png
-Form.title=Datenbank Zugriff
-field_command.text=SELECT * FROM kunden
-btnExecute.text=Ausf\u00fchren
